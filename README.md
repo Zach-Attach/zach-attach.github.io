@@ -2,7 +2,7 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Neumorphism
+title: Zachary Laborde
 # description: This will be meta HTML tag content. This can be ignored.
 description: Personal website powered by Jekyll
 # baseurl: The subpath of your site
@@ -11,7 +11,7 @@ baseurl: "/neumorphism"
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
-username: Neumorphism
+username: Zach
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
 typing_text: Jekyll Theme
