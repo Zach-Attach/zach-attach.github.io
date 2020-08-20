@@ -27,7 +27,19 @@
 }
 
 .second {
-  background: url(./assets/header.jpg);
+  background: black;
+}
+
+.third {
+  background: url(./assets/IBM/Background.jpg) fixed;
+}
+
+.fourth {
+  background: url(./assets/UNC/UNC_Campus.jpg) fixed;
+}
+
+.fifth {
+  background: url(./assets/Xavier/Xavier_Background.jpg) fixed;
 }
 
 .blur {

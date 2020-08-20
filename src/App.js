@@ -39,6 +39,27 @@ const App = () => (<>
       </h2>
     </div>
   </article>
+  <article className='container third'>
+    <div className='blur'>
+      <h2>
+        def
+      </h2>
+    </div>
+  </article>
+  <article className='container fourth'>
+    <div className='blur'>
+      <h2>
+        ghi
+      </h2>
+    </div>
+  </article>
+  <article className='container fifth'>
+    <div className='blur'>
+      <h2>
+        jkl
+      </h2>
+    </div>
+  </article>
 </>);
 
 
