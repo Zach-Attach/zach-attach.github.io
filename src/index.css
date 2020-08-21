@@ -32,31 +32,35 @@
   background-image: url(./assets/header.jpg);
 }
 
-.second {
+.aboutme {
   background: darkgray;
 }
 
-.third {
+.ibm {
   background-image: url(./assets/IBM/Background.jpg);
 }
 
-.fourth {
+.unc {
   background-image: url(./assets/UNC/UNC_Campus.jpg);
 }
 
-.fifth {
+.duke{
+  background-image: url(./assets/Duke/Background.jpg);
+}
+
+.xavier {
   background-image: url(./assets/Xavier/Background.jpg);
 }
 
-.sixth {
+.tulane {
   background-image: url(./assets/Tulane/Tulane_Background.jpg);
 }
 
-.seventh {
+.dartmouth {
   background-image: url(./assets/Dartmouth/Dartmouth_Campus.jpg);
 }
 
-.eighth {
+.lsu {
   background-image: url(./assets/LSU/LSU_Campus.jpg);
 }
 

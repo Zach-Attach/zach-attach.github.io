@@ -32,52 +32,59 @@ const App = () => (<>
       </h3>
     </div>
   </header>
-  <article className='container second background'>
+  <article className='container aboutme background'>
     <div className='blur'>
       <h2>
-        abc
+        About Me
       </h2>
     </div>
   </article>
-  <article className='container third background'>
+  <article className='container ibm background'>
     <div className='blur'>
       <h2>
-        def
+        IBM
       </h2>
     </div>
   </article>
-  <article className='container fourth background'>
+  <article className='container unc background'>
     <div className='blur'>
       <h2>
-        ghi
+        UNC Chapel Hill
       </h2>
     </div>
   </article>
-  <article className='container fifth background'>
+  <article className='container duke background'>
     <div className='blur'>
       <h2>
-        jkl
+        Duke University
       </h2>
     </div>
   </article>
-  <article className='container sixth background'>
+  <article className='container xavier background'>
     <div className='blur'>
       <h2>
-        def
+        Xavier University of Louisiana
       </h2>
     </div>
   </article>
-  <article className='container seventh background'>
+  <article className='container tulane background'>
     <div className='blur'>
       <h2>
-        ghi
+        Tulane University
       </h2>
     </div>
   </article>
-  <article className='container eighth background'>
+  <article className='container dartmouth background'>
     <div className='blur'>
       <h2>
-        jkl
+        Dartmouth College
+      </h2>
+    </div>
+  </article>
+  <article className='container lsu background'>
+    <div className='blur'>
+      <h2>
+        LSU
       </h2>
     </div>
   </article>
