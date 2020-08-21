@@ -19,27 +19,45 @@
   align-items: center;
   flex-direction: column;
   box-shadow: 0px -9px 46px -8px rgba(0,0,0,0.75);
-  background: antiquewhite;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .main {
-  background: url(./assets/header.jpg) fixed;
+  background-image: url(./assets/header.jpg);
 }
 
 .second {
-  background: black;
+  background: darkgray;
 }
 
 .third {
-  background: url(./assets/IBM/Background.jpg) fixed;
+  background-image: url(./assets/IBM/Background.jpg);
 }
 
 .fourth {
-  background: url(./assets/UNC/UNC_Campus.jpg) fixed;
+  background-image: url(./assets/UNC/UNC_Campus.jpg);
 }
 
 .fifth {
-  background: url(./assets/Xavier/Xavier_Background.jpg) fixed;
+  background-image: url(./assets/Xavier/Background.jpg);
+}
+
+.sixth {
+  background-image: url(./assets/Tulane/Tulane_Background.jpg);
+}
+
+.seventh {
+  background-image: url(./assets/Dartmouth/Dartmouth_Campus.jpg);
+}
+
+.eighth {
+  background-image: url(./assets/LSU/LSU_Campus.jpg);
 }
 
 .blur {

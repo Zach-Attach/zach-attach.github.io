@@ -22,7 +22,7 @@ import './index.css'
 // };
 
 const App = () => (<>
-  <header className='container main'>
+  <header className='container main background'>
     <div className='blur'>
       <h1>
         My Name is Zach
@@ -32,28 +32,49 @@ const App = () => (<>
       </h3>
     </div>
   </header>
-  <article className='container second'>
+  <article className='container second background'>
     <div className='blur'>
       <h2>
         abc
       </h2>
     </div>
   </article>
-  <article className='container third'>
+  <article className='container third background'>
     <div className='blur'>
       <h2>
         def
       </h2>
     </div>
   </article>
-  <article className='container fourth'>
+  <article className='container fourth background'>
     <div className='blur'>
       <h2>
         ghi
       </h2>
     </div>
   </article>
-  <article className='container fifth'>
+  <article className='container fifth background'>
+    <div className='blur'>
+      <h2>
+        jkl
+      </h2>
+    </div>
+  </article>
+  <article className='container sixth background'>
+    <div className='blur'>
+      <h2>
+        def
+      </h2>
+    </div>
+  </article>
+  <article className='container seventh background'>
+    <div className='blur'>
+      <h2>
+        ghi
+      </h2>
+    </div>
+  </article>
+  <article className='container eighth background'>
     <div className='blur'>
       <h2>
         jkl
