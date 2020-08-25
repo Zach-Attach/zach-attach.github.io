@@ -1,0 +1,48 @@
+{
+  "header": {
+    "name": "Zachary Laborde"
+  },
+  "body": [
+    {
+      "title": "About Me",
+      "description": "My name is Zach.",
+      "id": "aboutme"
+    },
+    {
+      "title": "IBM",
+      "description": "I worked at IBM.",
+      "id": "IBM",
+      "crest": "assets/IBM/IBM_Crest.png"
+    },
+    {
+      "title": "UNC Chapel Hill",
+      "description": "I went to UNC.",
+      "id": "UNC"
+    },
+    {
+      "title": "Duke University",
+      "description": "I went to Duke.",
+      "id": "Duke"
+    },
+    {
+      "title": "Xavier University of Louisiana",
+      "description": "I went to Xavier.",
+      "id": "Xavier"
+    },
+    {
+      "title": "Tulane University",
+      "description": "I went to Tulane.",
+      "id": "Tulane"
+    },
+    {
+      "title": "Dartmouth College",
+      "description": "I went to Dartmouth.",
+      "id": "Dartmouth"
+    },
+    {
+      "title": "LSU",
+      "description": "I went to LSU.",
+      "id": "LSU"
+    }
+  ]
+}

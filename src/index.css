@@ -11,57 +11,123 @@
 /*  width: 100%;*/
 /*}*/
 
+/* ;*/
+
 .container {
-  width: 100%;
-  height: 100vh;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px -9px 46px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px -9px 46px -8px rgba(0, 0, 0, 0.75);
 }
 
-.background {
+.big {
+  height: 100vh;
+}
+
+.medium {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small {
+  min-height: 34vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0px -9px 46px -8px rgba(0, 0, 0, 0.75);
+  background-position: 0% 20%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
+.para {
+  flex-grow: 1;
+}
+
+.header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
 
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .main {
   background-image: url(./assets/header.jpg);
 }
 
-.aboutme {
+.icon {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconDiv {
+  width: 10%;
+  height: 10%;
+}
+
+#aboutme {
   background: darkgray;
 }
 
-.ibm {
-  background-image: url(./assets/IBM/Background.jpg);
+#IBM {
+  background-image: url(./assets/IBM/background.jpg);
+  background-position: 0% 70%
 }
 
-.unc {
-  background-image: url(./assets/UNC/UNC_Campus.jpg);
+#UNC {
+  background-image: url(assets/UNC/background.jpg);
+  background-position: 0% 20%
 }
 
-.duke{
-  background-image: url(./assets/Duke/Background.jpg);
+#Duke {
+  background-image: url(assets/Duke/background.jpg);
+  background-position: 0% 30%
 }
 
-.xavier {
-  background-image: url(./assets/Xavier/Background.jpg);
+#Xavier {
+  background-image: url(./assets/Xavier/background.jpg);
+  background-position: 0% 30%
 }
 
-.tulane {
-  background-image: url(./assets/Tulane/Tulane_Background.jpg);
+#Tulane {
+  background-image: url(assets/Tulane/background.jpg);
+  background-position: 0% 40%
 }
 
-.dartmouth {
-  background-image: url(./assets/Dartmouth/Dartmouth_Campus.jpg);
+#Dartmouth {
+  background-image: url(assets/Dartmouth/background.jpg);
+  background-position: 0% 30%
 }
 
-.lsu {
-  background-image: url(./assets/LSU/LSU_Campus.jpg);
+#LSU {
+  background-image: url(assets/LSU/background.jpg);
+  background-position: 0% 35%
 }
 
 .blur {
