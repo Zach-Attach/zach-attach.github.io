@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.outer {
+  background-color: black;
+}
+
 /*div {*/
 /*  background-color: black;*/
 /*}*/
