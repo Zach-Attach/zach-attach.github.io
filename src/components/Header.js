@@ -40,7 +40,7 @@ export default () => {
   return (<>
     <div id="top">
       <ul id="nav" style={{background: `rgba(0,0,0,${navOpacity})`}}>
-        <li><a href="#">History</a></li>
+        <li><a href="#history">History</a></li>
         <li><a href="#">Achievements</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Contact</a></li>

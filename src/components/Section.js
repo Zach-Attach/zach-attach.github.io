@@ -1,26 +1,16 @@
+import SubSection from "./SubSection";
 import React from "react";
-import '../index.css';
-import icons from '../assets/icons';
+import strings from "../strings.json";
 
-export default ({id, title, children}) => {
-  return <>
-    <div className={'medium background'} id={id}>
-      <div className={'iconDiv'}>
-        <img src={icons[id]} alt='' className={'icon'}/>
-      </div>
-      <div className='small'>
-        <div className='blur title'>
-          <h2>
-            {title}
-          </h2>
-        </div>
-        <div className='blur para'>
-          <p>
-            {children}
-          </p>
-        </div>
-      </div>
-    </div>
-  </>
+const subSection = ({title, id, description, crest = null}) => (
+  <SubSection id={id} key={id} title={title} crest={crest}> {description} </SubSection>);
+
+const allSubSections = body => body.map(i => subSection(i));
+
+export default ({name}) => {
+  console.log(name);
+  return <section>
+    <a name={name}/>
+    {allSubSections(strings[name])}
+  </section>;
 }
-

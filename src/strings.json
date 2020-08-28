@@ -2,17 +2,18 @@
   "header": {
     "name": "Zachary Laborde"
   },
-  "body": [
+  "aboutme": [
     {
       "title": "About Me",
       "description": "My name is Zach.",
       "id": "aboutme"
-    },
+    }
+  ],
+  "history": [
     {
       "title": "IBM",
       "description": "I worked at IBM.",
-      "id": "IBM",
-      "crest": "assets/IBM/IBM_Crest.png"
+      "id": "IBM"
     },
     {
       "title": "UNC Chapel Hill",
