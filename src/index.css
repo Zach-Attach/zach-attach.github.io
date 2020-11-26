@@ -19,10 +19,10 @@
 
 .container {
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .big {
@@ -81,7 +81,7 @@
 
 /*background-attachment: fixed;*/
 .main {
-  background-image: url(./assets/header.jpg);
+    background-image: url(./assets/header1.jpg);
 }
 
 .icon {
@@ -109,41 +109,6 @@
 
 #aboutme {
   background: darkgray;
-}
-
-#IBM {
-  background-image: url(./assets/History/IBM/background5.png);
-  background-position-y: 70%
-}
-
-#UNC {
-  background-image: url(assets/History/UNC/background.jpg);
-  background-position-y: 20%
-}
-
-#Duke {
-  background-image: url(assets/History/Duke/background.jpg);
-  background-position-y: 30%
-}
-
-#Xavier {
-  background-image: url(./assets/History/Xavier/background.jpg);
-  background-position-y: 30%
-}
-
-#Tulane {
-  background-image: url(assets/History/Tulane/background.jpg);
-  background-position-y: 40%
-}
-
-#Dartmouth {
-  background-image: url(assets/History/Dartmouth/background.jpg);
-    background-position-y: 60%
-}
-
-#LSU {
-  background-image: url(assets/History/LSU/background.jpg);
-  background-position-y: 35%
 }
 
 #nav {
@@ -186,19 +151,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*.custom-class {*/
-/*  z-index: 1;*/
-/*  position: fixed;*/
-/*}*/
-
-/*.testContainer {*/
-/*  position: absolute;*/
-/*  top: 0px;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*  transform: translateX(0px) scale(1);*/
-/*  left: 0px;*/
-/*  transition: transform 0.2s ease 0s;*/
-/*  overflow: auto;*/
-/*  background: rgb(255, 255, 255);*/
-/*}*/
+.icon {
+    width: 15.25%;
+    margin-left: 4.875%;
+    margin-right: 4.875%;
+    margin-bottom: 4.875%;
+}
