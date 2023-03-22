@@ -18,7 +18,7 @@ export default () => {
         </svg>
       </div>
       <div id='icons'>
-        <a href="/Laborde_CV_2020_Public.pdf">
+        <a href="/Laborde_CV_2023_Public.pdf">
           <img src={CV} alt="CV"/>
         </a>
         <a href="mailto:zachary.c.laborde@gmail.com">
