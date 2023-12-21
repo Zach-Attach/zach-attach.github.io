@@ -1,0 +1,162 @@
+\documentclass{article}
+\usepackage[none]{hyphenat}
+
+% Packages
+\usepackage[letterpaper, margin=0.5in]{geometry}
+% \usepackage{multicol}
+\usepackage{vwcol}
+
+\usepackage[most]{tcolorbox} % \smallBubble{}
+\usepackage{pgffor}
+
+
+\usepackage{wrapfig}
+
+\usepackage{varwidth}
+\usepackage{linegoal}
+
+% \usepackage{adjmulticol}
+
+% Fill In
+\newcommand{\email}{zlaborde@iu.edu}
+\newcommand{\website}{zacharylaborde.com}
+\newcommand{\name}{Zachary Laborde}
+\newcommand{\zl}{<b>Laborde, Z.</b>}
+\newcommand{\statement}{Highly motivated research scientist with expertise in neuronal development and learning, seeking to leverage knowledge of brain development and learning mechanisms to advance the field of machine learning and contribute to innovative solutions for complex problems.}
+
+\newcommand{\courses}{
+Machine Learning,%
+Neural Engineering,%
+Computational Modeling of Evolutionary \& Adaptive Systems,%
+Evolution \& Analysis of Brain-Body-Environment Systems,%
+Dynamical Systems Theory,%
+Theories of Learning and Memory,%
+Computational Bioengineering,%
+Applied Statistical Computing, Information Theory,%
+Network Science,%
+Linear Algebra,%
+Discrete Mathematics,%
+Neural Science
+}
+
+\newcommand{\software}{
+PyTorch,%
+TensorFlow,%
+NetworkX,%
+NumPy,%
+SciPy,%
+Hadoop,%
+Spark,%
+Matplotlib,%
+Plotly,%
+Git%
+}
+
+\newcommand{\skills}{
+Python,%
+Mathematica,%
+R,%
+C++,%
+Java,%
+JavaScript,%
+MATLAB,%
+Groovy,%
+Ruby%  
+}
+
+% Sections
+\newcommand{\header}{
+  \begin{center}
+  {\small \email }
+  \hfill
+  {\Huge \name} 
+  \hfill
+  {\small \website}
+  \end{center}
+}
+
+\newcommand{\cWL}{3in} % column width left
+\newcommand{\cWR}{4.5in} % column width right
+
+\newsavebox{\wBox}% width box
+\newsavebox{\hBox}% height box
+
+\newlength{\wwd}% width of width box
+\newlength{\hwd}% height of height box
+
+\newcommand{\smallBubble}[1]{
+\sbox{\wBox}{#1}%
+%
+\ifdim\dimexpr\dimexpr\wd\wBox+2\fboxsep+2\fboxrule\relax>\cWL\relax% check if content exceeds width of column
+\setlength{\wwd}{\dimexpr0.6\wd\wBox+2\fboxsep+2\fboxrule\relax}% set width of box to 0.6 of column width
+\setlength{\hwd}{28pt}% set height of box to 28pt
+\else%
+\setlength{\wwd}{\dimexpr\wd\wBox+2\fboxsep+2\fboxrule\relax}% set width of box to natural width
+\setlength{\hwd}{16pt}% set height of box to 16pt
+\fi%
+%
+\begin{varwidth}{\wwd}%
+\begin{tcolorbox}[colback=white, colframe=black, arc=2mm, boxrule=0.2mm,left=-1mm, right=0mm, top=0mm, bottom=0mm, width=\wwd, height=\hwd, valign=center]%
+\begin{center}%
+#1%
+\end{center}%
+\end{tcolorbox}%
+\end{varwidth}%
+}
+
+% Document
+\begin{document}
+
+% Header
+\header
+
+% General Statement
+\noindent \statement
+
+% Left Column
+\noindent \begin{minipage}[t]{\cWL}
+
+
+\centering
+
+\section*{Coursework}
+\foreach \x in \courses {\smallBubble{\ \x\ }}%
+
+\section*{Software}
+\foreach \x in \software {\smallBubble{\ \x\ }}
+
+\section*{Skills}
+\foreach \x in \skills {\smallBubble{\ \x\ }}
+
+\section*{Education}
+
+\newcommand{\edu}[4]{
+  \centering
+}
+
+Indiana University
+Ph.D. Student in Cognitive Science \& Neuroscience (coursework completed)
+Aug. 2021 - Present
+
+Xavier University of Louisiana
+B.S. in Psychology
+Aug. 2013 - May 2017
+
+\end{minipage} % no space if you would like to put them side by side
+\hspace{0.01mm}
+% Right Column
+\noindent \begin{minipage}[t]{\cWR}
+\centering
+
+\section*{Publications and Conferences}
+% Add your publications and conferences here
+
+\section*{Research Experience}
+% Add your research experience here
+
+\section*{Work Experience}
+% Add your work experience here
+
+\end{minipage} % no space if you would like to put them side by side
+
+\end{document}
