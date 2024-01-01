@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'WildfireProgressionProj.blg'
+[71] biber-darwin:340> INFO - === Mon Jan  1, 2024, 15:43:07
+[86] Biber.pm:418> INFO - Reading 'WildfireProgressionProj.bcf'
+[195] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[211] Biber.pm:4383> INFO - Processing section 0
+[221] Biber.pm:4574> INFO - Looking for bibtex file 'wpp.bib' for section 0
+[223] bibtex.pm:1713> INFO - LaTeX decoding ...
+[230] bibtex.pm:1518> INFO - Found BibTeX data source 'wpp.bib'
+[317] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[317] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[317] Biber.pm:4203> INFO - Sorting list 'byname/global//global/global' of type 'entry' with template 'byname' and locale 'en-US'
+[317] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[325] bbl.pm:654> INFO - Writing 'WildfireProgressionProj.bbl' with encoding 'UTF-8'
+[329] bbl.pm:757> INFO - Output to WildfireProgressionProj.bbl

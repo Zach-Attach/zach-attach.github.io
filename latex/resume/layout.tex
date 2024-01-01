@@ -11,15 +11,19 @@
 }%
 %
 \newcommand{\skillssect}{%
-\sect{Skills}%
-\foreach \x in \skills {\smallBubble{\ \x\ }}%
-\vspace{-4mm}%
+  \sect{Skills}%
+  \begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
+  \foreach \x in \skills { \x, }%
+\end{tcolorbox}%
 }%
 %
 \newcommand{\softwaresect}{%
 \sect{Software}%
-\foreach \x in \software {\smallBubble{\ \x\ }}%
-\vspace{-4mm}%
+  \begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
+  % \foreach \x in \software { \x, }%
+  \flushleft{\software}%
+\end{tcolorbox}%
+\vspace{-2mm}
 }%
 %
 \newcommand{\education}{%
