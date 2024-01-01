@@ -44,12 +44,13 @@
 % adjust how lists are presented as bullet points
 \setlist[itemize]{align=parleft,left=0pt..8pt}
 
-\definecolor{darkgray}{rgb}{0.5, 0.5, 0.5}
 \definecolor{headerBackgroundColor}{HTML}{ffffff}
-\definecolor{subheadingSkillsBackgroundColor}{HTML}{ffffff}
-\definecolor{subheadingDefaultBackgroundColor}{HTML}{ffffff}
-\definecolor{skillsBackgroundColor}{HTML}{ffffff}
-\definecolor{subheadingTextColor}{HTML}{837efc}
+\definecolor{headerTextColor}{HTML}{8b1540}
+\definecolor{statementBoxColor}{HTML}{fdf1f7}
+\definecolor{subheadingBackgroundColor}{HTML}{ffffff}
+\definecolor{subheadingTextColor}{HTML}{38557f}
+\definecolor{subheadingBoxColor}{HTML}{f5fbff}
+\definecolor{subheadingBoxBorderColor}{HTML}{ffffff}
 
 \renewcommand\familydefault{\sfdefault}
 
@@ -78,7 +79,7 @@
 \fi%
 %
 \begin{varwidth}{\wwd}%
-  \begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm,left=-1mm, right=0mm, top=0mm, bottom=0mm, before skip=2mm, after skip=2mm, width=\wwd, height=\hwd, valign=center]%
+  \begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm,left=-1mm, right=0mm, top=0mm, bottom=0mm, before skip=2mm, after skip=2mm, width=\wwd, height=\hwd, valign=center]%
     \begin{center}%
       #1%
     \end{center}%
@@ -96,7 +97,7 @@
   %when = #2
   %who = #3
   %what = #4
-  \begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=2mm, width=#1, before skip=2mm, after skip=2mm, valign=center]%
+  \begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=2mm, width=#1, before skip=2mm, after skip=2mm, valign=center]%
     \flushleft{\textit{#2} \hfill #3}%
     \vspace{-2mm}%
     \flushleft{#4}%
@@ -108,7 +109,7 @@
 }%
 %%%%%%%%%%%%%%%%%%%%%%% Sections %%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\header}{%
-\begin{tcolorbox}[colback=headerBackgroundColor, coltext=black, colframe=darkgray, arc=0mm, boxrule=-0.5in, left=0.5in, right=0.5in, top=0.5in, bottom=0.05in, before skip=0mm, after skip=0.5in, valign=center]%
+\begin{tcolorbox}[colback=headerBackgroundColor, coltext=headerTextColor, colframe=subheadingBoxBorderColor, arc=0mm, boxrule=-0.5in, left=0.5in, right=0.5in, top=0.5in, bottom=0.05in, before skip=0mm, after skip=0.5in, valign=center]%
   \begin{center}%
   {\email}%
   \hfill%
@@ -122,7 +123,7 @@
 }%
 %
 \newcommand{\edu}[4]{
-\begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm,left=1mm, right=1mm, top=1mm, bottom=1mm,before skip=2mm, after skip=2mm, width=\cWL, valign=center]%
+\begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm,left=1mm, right=1mm, top=1mm, bottom=1mm,before skip=2mm, after skip=2mm, width=\cWL, valign=center]%
   \flushleft{
     \noindent%
     \textit{#1}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  1 JAN 2024 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  1 JAN 2024 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -874,42 +874,42 @@ Package biblatex Info: Reference segment=0 on input line 86.
 
  (./body.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 39.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 
-Underfull \hbox (badness 2057) in paragraph at lines 39--39
+Underfull \hbox (badness 2057) in paragraph at lines 36--36
 \T1/phv/m/sl/10 in the Ma-chine: Pro-ceed-ings of the 2023 Ar-ti-fi-cial
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 39--39
+Underfull \hbox (badness 2376) in paragraph at lines 36--36
 [][]\T1/phv/m/n/10 Laborde, Z., Stephen-son, D., Reiss, A., Beaton, E.,
  []
 
 
-Underfull \hbox (badness 7685) in paragraph at lines 39--39
+Underfull \hbox (badness 7685) in paragraph at lines 36--36
 \T1/phv/m/n/10 bi-sec-tion plu-gin for mango [Poster pre-sen-ta-tion].
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 39--39
+Underfull \hbox (badness 1867) in paragraph at lines 36--36
 [][]\T1/phv/m/n/10 Laborde, Z., & Co-hen, J. (2016). Nos-tal-gia and the
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 39--39
+Underfull \hbox (badness 2790) in paragraph at lines 36--36
 \T1/phv/m/n/10 per-cep-tion of time. \T1/phv/m/sl/10 XU-LAnEXUS\T1/phv/m/n/10 , \T1/phv/m/sl/10 14\T1/phv/m/n/10 (1). $https : / /
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 49.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 46.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
 
-Overfull \hbox (11.38104pt too wide) in paragraph at lines 34--57
+Overfull \hbox (11.38104pt too wide) in paragraph at lines 31--54
 [] [] 
  []
 
@@ -922,15 +922,15 @@ Package logreq Info: Writing requests to 'WildfireProgressionProj.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29273 strings out of 478268
- 619249 string characters out of 5846348
- 1433866 words of memory out of 5000000
- 47013 multiletter control sequences out of 15000+600000
+ 29275 strings out of 478268
+ 619278 string characters out of 5846348
+ 1434282 words of memory out of 5000000
+ 47015 multiletter control sequences out of 15000+600000
  497438 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,118p,809b,5037s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on WildfireProgressionProj.pdf (1 page, 39222 bytes).
+Output written on WildfireProgressionProj.pdf (1 page, 39273 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
