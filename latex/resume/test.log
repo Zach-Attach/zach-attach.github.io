@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  1 JAN 2024 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  31 DEC 2023 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex
-(/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex
+**/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex
+(/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -754,31 +754,31 @@ Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 \hwd=\skip98
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 114.
+LaTeX Warning: \include should only be used after \begin{document} on input line 99.
 
 (./layout.tex)
 \@quotelevel=\count452
 \@quotereset=\count453
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 126.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 111.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-) (./master.aux (./body.aux))
-\openout1 = `master.aux'.
+) (./test.aux (./body.aux))
+\openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count454
@@ -863,13 +863,13 @@ File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `master.bcf'.
+\openout4 = `test.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'master.bbl' found.
- (./master.bbl)
-Package biblatex Info: Reference section=0 on input line 126.
-Package biblatex Info: Reference segment=0 on input line 126.
+Package biblatex Info: ... file 'test.bbl' found.
+ (./test.bbl)
+Package biblatex Info: Reference section=0 on input line 111.
+Package biblatex Info: Reference segment=0 on input line 111.
 \openout2 = `body.aux'.
 
  (./body.tex
@@ -906,21 +906,21 @@ Overfull \hbox (11.38104pt too wide) in paragraph at lines 35--58
 ) [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./master.aux (./body.aux))
-Package logreq Info: Writing requests to 'master.run.xml'.
-\openout1 = `master.run.xml'.
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./test.aux (./body.aux))
+Package logreq Info: Writing requests to 'test.run.xml'.
+\openout1 = `test.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29338 strings out of 478268
- 619746 string characters out of 5846348
- 1500018 words of memory out of 5000000
- 47080 multiletter control sequences out of 15000+600000
+ 29319 strings out of 478268
+ 619410 string characters out of 5846348
+ 1481653 words of memory out of 5000000
+ 47061 multiletter control sequences out of 15000+600000
  497438 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,118p,792b,5037s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,12n,118p,790b,5037s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on master.pdf (2 pages, 49685 bytes).
+Output written on test.pdf (2 pages, 46623 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

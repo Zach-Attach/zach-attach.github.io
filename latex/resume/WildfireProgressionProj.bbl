@@ -1,0 +1,275 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{byname/global//global/global}
+    \entry{ALIFE2023A}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dfda6aa42357bf54ec255fbfc702cbfd}{%
+           family={Laborde},
+           familyi={L\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dbe42a62d587b74049518f69f8c4c89}{%
+           family={Izquierdo},
+           familyi={I\bibinitperiod},
+           given={Eduardo\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \strng{fullhash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \strng{bibnamehash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \strng{authorbibnamehash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \strng{authornamehash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \strng{authorfullhash}{102537f4f0d3c7a179ff2cb75472b1b8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ALIFE 2023: Ghost in the Machine: Proceedings of the 2023 Artificial Life Conference}
+      \field{month}{7}
+      \field{number}{26}
+      \field{title}{Spatial Embedding of Edges in a Synaptic Generative Model of {C.} elegans}
+      \field{volume}{ALIFE 2023: Ghost in the Machine: Proceedings of the 2023 Artificial Life Conference}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1162/isal_a_00611
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/isal_a_00611
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/isal_a_00611
+      \endverb
+      \keyw{C. elegans,connectome,generative model,graph embedding,graph neural network,graph representation learning,neural network,neuroscience,synaptic network,worm,paper,conference}
+    \endentry
+    \entry{ALIFE2023B}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3b25df7ce4aa0ff0bbc6833262326e19}{%
+           family={Severino},
+           familyi={S\bibinitperiod},
+           given={Gabriel\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dfda6aa42357bf54ec255fbfc702cbfd}{%
+           family={Laborde},
+           familyi={L\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a274e0966a50a289b81690b6dea5697}{%
+           family={Barwich},
+           familyi={B\bibinitperiod},
+           given={Ann-Sophie},
+           giveni={A\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb2a5594853c996b4515f10f0bb25ecb}
+      \strng{fullhash}{0347c02e0605d57189e720a9c13ffa62}
+      \strng{bibnamehash}{0347c02e0605d57189e720a9c13ffa62}
+      \strng{authorbibnamehash}{0347c02e0605d57189e720a9c13ffa62}
+      \strng{authornamehash}{fb2a5594853c996b4515f10f0bb25ecb}
+      \strng{authorfullhash}{0347c02e0605d57189e720a9c13ffa62}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ALIFE 2023: Ghost in the Machine: Proceedings of the 2023 Artificial Life Conference}
+      \field{month}{7}
+      \field{number}{23}
+      \field{title}{The Degeneracy of Control Architectures in Cell Lineages: Implications for Tissue Homeostasis}
+      \field{volume}{ALIFE 2023: Ghost in the Machine: Proceedings of the 2023 Artificial Life Conference}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1162/isal_a_00608
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/isal_a_00608
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/isal_a_00608
+      \endverb
+      \keyw{cell lineage,paper,conference}
+    \endentry
+    \entry{Patent}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=65b70a6f053595e63022514aeb25c1db}{%
+           family={Laborde},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fffa28dbba59fd95ad496c42b54c375}{%
+           family={Toler},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11db985cd8fae6379e61c093fa8fa333}{%
+           family={Velhal},
+           familyi={V\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f06add6b6ad838231ab79f32d579e493}{%
+           family={Farag},
+           familyi={F\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cc4f21bcc525b0a5ecc4cb5eb7ffad6}{%
+           family={Chakra},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{24bc4fb60063a788ebf2aa01bfed5f93}
+      \strng{fullhash}{eeca867451d739c973c4dbcd3cbc8883}
+      \strng{bibnamehash}{eeca867451d739c973c4dbcd3cbc8883}
+      \strng{authorbibnamehash}{eeca867451d739c973c4dbcd3cbc8883}
+      \strng{authornamehash}{24bc4fb60063a788ebf2aa01bfed5f93}
+      \strng{authorfullhash}{eeca867451d739c973c4dbcd3cbc8883}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{IP.com}
+      \field{title}{Method and System for Implementing a Holistic Umbrella Drone}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://priorart.ip.com/IPCOM/000257353
+      \endverb
+      \verb{url}
+      \verb https://priorart.ip.com/IPCOM/000257353
+      \endverb
+    \endentry
+    \entry{CNS2017}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=65b70a6f053595e63022514aeb25c1db}{%
+           family={Laborde},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8497d337e21060223d0af61e9c073f5f}{%
+           family={Stephenson},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c26c602211e0eaebae1ad983858860a8}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fafcdadb2b840b3a0ef016122a9d3e28}{%
+           family={Beaton},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90e1b93429e0013509f5a2e1f6d38806}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA}%
+      }
+      \strng{namehash}{24bc4fb60063a788ebf2aa01bfed5f93}
+      \strng{fullhash}{86d512ee9ee5b6ba55d413992f9c32f6}
+      \strng{bibnamehash}{86d512ee9ee5b6ba55d413992f9c32f6}
+      \strng{authorbibnamehash}{86d512ee9ee5b6ba55d413992f9c32f6}
+      \strng{authornamehash}{24bc4fb60063a788ebf2aa01bfed5f93}
+      \strng{authorfullhash}{86d512ee9ee5b6ba55d413992f9c32f6}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cognitive Neuroscience Society}
+      \field{month}{3}
+      \field{note}{Poster presentation}
+      \field{title}{Anterior-Posterior Insular Cortex Bisection Plugin for Mango}
+      \field{year}{2017}
+      \true{nocite}
+    \endentry
+    \entry{XULANexus2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=65b70a6f053595e63022514aeb25c1db}{%
+           family={Laborde},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90e1b93429e0013509f5a2e1f6d38806}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{795505d446e2df4a38ce8f506b509b9c}
+      \strng{fullhash}{795505d446e2df4a38ce8f506b509b9c}
+      \strng{bibnamehash}{795505d446e2df4a38ce8f506b509b9c}
+      \strng{authorbibnamehash}{795505d446e2df4a38ce8f506b509b9c}
+      \strng{authornamehash}{795505d446e2df4a38ce8f506b509b9c}
+      \strng{authorfullhash}{795505d446e2df4a38ce8f506b509b9c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{XULAnEXUS}
+      \field{number}{1}
+      \field{title}{Nostalgia and the Perception of Time}
+      \field{volume}{14}
+      \field{year}{2016}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://digitalcommons.xula.edu/xulanexus/vol14/iss1/1
+      \endverb
+      \verb{url}
+      \verb https://digitalcommons.xula.edu/xulanexus/vol14/iss1/1
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

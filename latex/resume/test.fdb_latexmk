@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber master"] 1704060228 "master.bcf" "master.bbl" "master" 1704134574
-  "master.bcf" 1704134574 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
+["biber test"] 1704061621 "test.bcf" "test.bbl" "test" 1704072902
+  "test.bcf" 1704072902 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
   (generated)
-  "master.bbl"
-  "master.blg"
-["pdflatex"] 1704134573 "/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex" "master.pdf" "master" 1704134574
-  "/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex" 1704061645 2687 e8905777f2d9c0c46a33d60150d49b89 ""
+  "test.bbl"
+  "test.blg"
+["pdflatex"] 1704072900 "/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex" "test.pdf" "test" 1704072902
+  "/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex" 1704061684 2293 9050ae99c85de48f4bd7d678d5db4c6c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -187,18 +187,18 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677795340 2826435 8a8e7df4b0d0f40a8963a6abe21acae4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "body.aux" 1704134574 4328 1c9125b2cf1769b6eda6a12a6eab9ba2 "pdflatex"
-  "body.tex" 1704134573 1611 ef4c10b07f3f7ba98bfc97f1a49e425c ""
+  "body.aux" 1704072902 4328 17f9256545c44ac5e8277402b114ad45 "pdflatex"
+  "body.tex" 1704072900 1611 d54e9f3e0f4385eab8c997a3b74396dd ""
   "layout.tex" 1704072667 2813 7d8d1e9bff0b65c2935c0591f55ce284 ""
-  "master.aux" 1704134574 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
-  "master.bbl" 1704060230 6280 b9a694f12575e7066e2ca8a743a525b4 "biber master"
-  "master.run.xml" 1704134574 2435 58c3a4be4f9df194055856c8e6444638 "pdflatex"
-  "master.tex" 1704061645 2687 e8905777f2d9c0c46a33d60150d49b89 ""
-  "resume.sty" 1704134573 3829 fa705935b65de7013d2105a67cd92a7d ""
+  "resume.sty" 1704072897 3828 c18eeb3e9f7083e1c3f2dd09388503e7 ""
+  "test.aux" 1704072902 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
+  "test.bbl" 1704061622 6280 b9a694f12575e7066e2ca8a743a525b4 "biber test"
+  "test.run.xml" 1704072902 2421 06e809c03bfdf2a22e188df8824ed477 "pdflatex"
+  "test.tex" 1704061684 2293 9050ae99c85de48f4bd7d678d5db4c6c ""
   (generated)
   "body.aux"
-  "master.aux"
-  "master.bcf"
-  "master.log"
-  "master.pdf"
-  "master.run.xml"
+  "test.aux"
+  "test.bcf"
+  "test.log"
+  "test.pdf"
+  "test.run.xml"

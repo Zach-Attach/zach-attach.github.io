@@ -1,0 +1,60 @@
+\newcommand{\courseworksect}{%
+\sect{Coursework}%
+\foreach \x in \courses {\smallBubble{\ \x\ }}%
+\vspace{-4mm}%
+}%
+%
+\newcommand{\skillssect}{%
+\sect{Skills}%
+\foreach \x in \skills {\smallBubble{\ \x\ }}%
+\vspace{-4mm}%
+}%
+%
+\newcommand{\softwaresect}{%
+\sect{Software}%
+\foreach \x in \software {\smallBubble{\ \x\ }}%
+\vspace{-4mm}%
+}%
+%
+\newcommand{\education}{%
+\sect{Education}%
+\edu{Indiana University Bloomington}{Aug. 2021 - Present}{Neuroscience \& Cognitive Science}{Ph.D.*}%
+\edu{Xavier University of Louisiana}{Aug. 2013 - May 2017}{Psychology}{Bachelor of Science
+
+Computer Science (minor)}%
+\vspace{-4mm}%
+}%
+%
+%
+\newcommand{\pubs}{%
+\sect{Publications \& Conferences}%
+\nocite{*} % This command cites all entries in the bibliography. 
+\setlength{\bibhang}{1em}% the hanging indent
+\begin{tcolorbox}[colback=white, colframe=darkgray, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, width=\cWR, before skip=2mm, after skip=2mm, valign=center]%
+  \printbibliography%
+\end{tcolorbox}%
+\vspace{-4mm}%
+}%
+\newcommand{\bulletsIU}{%
+  Pioneered the evolution of optimal sensorimotor configurations in simulated agents\, utilizing Continuous Time Recurrent Neural Network (CTRNN) controllers\, achieving neural networks that were simultaneously smaller and more performant,%
+  Modeled development of a C. elegans connectome\, leading to improved accuracy versus existing models and new perspectives on its structure,%
+  Discovered a new biologically-realistic dynamic control system for cellular lineages\, with potential applications in synthetic biology and regenerative medicine,%
+  Developed and launched an online application for the dynamical analysis of cellular differentiation in multi-compartment systems\, integrating multiple control mechanisms (see https://nanohub.org/resources/dynsysregen),%
+  Conceived and implemented a novel level set approximation algorithm for high-dimensional manifolds\, significantly reducing computational complexity and resource usage by 90\%.%
+}
+
+\newcommand{\bulletsXULA}{%
+  Designed\, administered\, and published research on nostalgia and the perception of time,%
+  Developed computational tools\, with one automating a 2-4 hour manual process,%
+  Created shell scripts transform neuroimaging data with Advanced Normalization Tools%
+}
+
+\newcommand{\bulletsDartmouth}{%
+  Compiled and analyzed gigabytes of 4-dimensional fMRI data for correlations between the ventromedial prefrontal cortex (vmPFC)\, the reward network\, and attention scores%
+}
+%
+\newcommand{\expIBM}{%
+  Developed features to automate event analytics analysis and prediction for operation engineers using machine learning,%
+  Developed two internationally-used mobile apps for both Android and iOS,%
+  Automated entire team\, saving IBM approximately \$1\,000\,000/year%
+}
