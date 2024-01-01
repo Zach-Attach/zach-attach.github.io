@@ -1,10 +1,11 @@
 # Fdb version 3
-["biber test"] 1704139300 "test.bcf" "test.bbl" "test" 1704139498
-  "test.bcf" 1704139498 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
+["biber test"] 1704140845 "test.bcf" "test.bbl" "test" 1704140852
+  "cite.bib" 1704055393 4365 5d21d4d75c6741d526aba126f4a10b80 ""
+  "test.bcf" 1704140852 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
   (generated)
   "test.bbl"
   "test.blg"
-["pdflatex"] 1704139496 "/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex" "test.pdf" "test" 1704139498
+["pdflatex"] 1704140850 "/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex" "test.pdf" "test" 1704140852
   "/Users/zyle/Code/zach-attach.github.io/latex/resume/test.tex" 1704061684 2293 9050ae99c85de48f4bd7d678d5db4c6c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -187,13 +188,13 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677795340 2826435 8a8e7df4b0d0f40a8963a6abe21acae4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "body.aux" 1704139498 4328 17f9256545c44ac5e8277402b114ad45 "pdflatex"
-  "body.tex" 1704139494 1677 a5e4de0c02d0cdaeaad3cd970fa73a26 ""
-  "layout.tex" 1704138225 2813 7d8d1e9bff0b65c2935c0591f55ce284 ""
-  "resume.sty" 1704139474 3961 359cac65c0bf669898327e586f445300 ""
-  "test.aux" 1704139498 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
-  "test.bbl" 1704139302 6280 b9a694f12575e7066e2ca8a743a525b4 "biber test"
-  "test.run.xml" 1704139498 2421 06e809c03bfdf2a22e188df8824ed477 "pdflatex"
+  "body.aux" 1704140852 4328 84c485a3440c88475d8ae4a6a66907f8 "pdflatex"
+  "body.tex" 1704139524 1691 7a23fbe4d60ff45c3943f1a05784329e ""
+  "layout.tex" 1704140845 3046 fa7450bb76c13736245cfe2559bb58fa ""
+  "resume.sty" 1704140768 3965 cdded61f7ceff975a3908df5ccb9a6fd ""
+  "test.aux" 1704140852 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
+  "test.bbl" 1704140846 6280 b9a694f12575e7066e2ca8a743a525b4 "biber test"
+  "test.run.xml" 1704140852 2421 06e809c03bfdf2a22e188df8824ed477 "pdflatex"
   "test.tex" 1704061684 2293 9050ae99c85de48f4bd7d678d5db4c6c ""
   (generated)
   "body.aux"
