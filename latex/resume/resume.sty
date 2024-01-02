@@ -124,12 +124,12 @@
 \newcommand{\header}{%
 \begin{tcolorbox}[colback=headerBackgroundColor, coltext=headerTextColor, colframe=borderColor_default, arc=0mm, boxrule=-0.5in, left=0.5in, right=0.5in, top=0.5in, bottom=0.05in, before skip=0mm, after skip=0.5in, valign=center]%
   \begin{center}%
-  {\email}%
-  \hfill%
-  {\Huge \name} %
-  \hfill%
-  {\website}%
-  \end{center}%
+    \raisebox{0.5\height}{\email}%
+    \hfill%
+    {\Huge \name}%
+    \hfill%
+    \raisebox{0.5\height}{\website}%
+    \end{center}%
   \noindent \statementsect%
 \end{tcolorbox}%
 \vspace{0.1in}%
