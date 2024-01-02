@@ -1,5 +1,5 @@
 \newcommand{\statementsect}{%
-\begin{tcolorbox}[colback=statementBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
+\begin{tcolorbox}[colback=boxColor_statement, colframe=borderColor_default, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
   \statement%
 \end{tcolorbox}%
 }%
@@ -12,14 +12,14 @@
 %
 \newcommand{\skillssect}{%
   \sect{Skills}%
-  \begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
+  \begin{tcolorbox}[colback=boxColor_skillsSoftware, colframe=borderColor_skillsSoftware, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
   \foreach \x in \skills { \x, }%
 \end{tcolorbox}%
 }%
 %
 \newcommand{\softwaresect}{%
 \sect{Software}%
-  \begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
+  \begin{tcolorbox}[colback=boxColor_skillsSoftware, colframe=borderColor_skillsSoftware, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, before skip=0mm, after skip=-10mm, valign=center]%
   % \foreach \x in \software { \x, }%
   \flushleft{\software}%
 \end{tcolorbox}%
@@ -40,7 +40,7 @@ Computer Science (minor)}%
 \sect{Publications \& Conferences}%
 \nocite{*} % This command cites all entries in the bibliography. 
 \setlength{\bibhang}{1em}% the hanging indent
-\begin{tcolorbox}[colback=subheadingBoxColor, colframe=subheadingBoxBorderColor, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, width=\cWR, before skip=2mm, after skip=2mm, valign=center]%
+\begin{tcolorbox}[colback=boxColor_default, colframe=borderColor_default, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, width=\cWR, before skip=2mm, after skip=2mm, valign=center]%
   \printbibliography%
 \end{tcolorbox}%
 \vspace{-4mm}%
