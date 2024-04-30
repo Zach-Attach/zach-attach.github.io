@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  2 JAN 2024 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  3 JAN 2024 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -880,17 +880,22 @@ Overfull \hbox (568.2854pt too wide) in paragraph at lines 27--27
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 
-Underfull \hbox (badness 2057) in paragraph at lines 36--36
-\T1/phv/m/sl/10 in the Ma-chine: Pro-ceed-ings of the 2023 Ar-ti-fi-cial
+Underfull \hbox (badness 2173) in paragraph at lines 36--36
+\T1/phv/m/n/10 Im-pli-ca-tions for tis-sue home-osta-sis. \T1/phv/m/sl/10 AL-IFE 2023:
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 36--36
-[][]\T1/phv/m/n/10 Laborde, Z., & Co-hen, J. (2016). Nos-tal-gia and the
+Underfull \hbox (badness 1796) in paragraph at lines 36--36
+\T1/phv/m/sl/10 Ghost in the Ma-chine: Pro-ceed-ings of the 2023
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 36--36
+Underfull \hbox (badness 2608) in paragraph at lines 36--36
+\T1/phv/m/sl/10 Ar-ti-fi-cial Life Con-fer-ence\T1/phv/m/n/10 , \T1/phv/m/sl/10 AL-IFE 2023: Ghost in
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 36--36
 \T1/phv/m/n/10 per-cep-tion of time. \T1/phv/m/sl/10 XU-LAnEXUS\T1/phv/m/n/10 , \T1/phv/m/sl/10 14\T1/phv/m/n/10 (1). $https : / /
  []
 
@@ -902,32 +907,27 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
-
-Overfull \hbox (11.38104pt too wide) in paragraph at lines 31--54
-[] [] 
- []
-
 ) [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./test.aux (./body.aux))
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./test.aux (./body.aux))
 Package logreq Info: Writing requests to 'test.run.xml'.
 \openout1 = `test.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29265 strings out of 478268
- 618684 string characters out of 5846348
- 1426846 words of memory out of 5000000
- 47007 multiletter control sequences out of 15000+600000
+ 29264 strings out of 478268
+ 618665 string characters out of 5846348
+ 1432771 words of memory out of 5000000
+ 47006 multiletter control sequences out of 15000+600000
  497438 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,118p,790b,5037s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on test.pdf (2 pages, 39586 bytes).
+Output written on test.pdf (1 page, 38901 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

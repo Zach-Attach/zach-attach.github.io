@@ -37,20 +37,19 @@ Computer Science (minor)}%
 %
 %
 \newcommand{\pubs}{%
+\nocite{*}% This command cites all entries in the bibliography. 
 \sect{Publications \& Conferences}%
-\nocite{*} % This command cites all entries in the bibliography. 
 \setlength{\bibhang}{1em}% the hanging indent
-\begin{tcolorbox}[colback=boxColor_default, colframe=borderColor_default, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, width=\cWR, before skip=2mm, after skip=2mm, valign=center]%
+\begin{tcolorbox}[colback=boxColor_default, colframe=borderColor_default, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=1mm, width=\cWL, before skip=2mm, after skip=2mm, valign=center]%
   \printbibliography%
 \end{tcolorbox}%
 \vspace{-4mm}%
 }%
 \newcommand{\bulletsIU}{%
-  Pioneered the evolution of optimal sensorimotor configurations in simulated agents\, utilizing Continuous Time Recurrent Neural Network (CTRNN) controllers\, achieving neural networks that were simultaneously smaller and more performant,%
-  Modeled development of a C. elegans connectome\, leading to improved accuracy versus existing models and new perspectives on its structure,%
-  Discovered a new biologically-realistic dynamic control system for cellular lineages\, with potential applications in synthetic biology and regenerative medicine,%
-  Developed and launched an online application for the dynamical analysis of cellular differentiation in multi-compartment systems\, integrating multiple control mechanisms (see https://nanohub.org/resources/dynsysregen),%
-  Conceived and implemented a novel level set approximation algorithm for high-dimensional manifolds\, significantly reducing computational complexity and resource usage by 90\%.%
+  Pioneered the evolution of optimal sensorimotor configurations in simulated agents\, using neural networks that were 50\% smaller while more performant than existing networks,%
+  Discovered low node connectivity within the developing C. elegans connectome when compared to thousands of generative network models,%
+  Discovered a new biologically-realistic dynamic control system for cellular lineages\, with potential applications in synthetic biology and regenerative medicine\, and developed an online interactive application for it (see https://nanohub.org/resources/dynsysregen),%
+  Conceived and implemented a novel level set approximation algorithm for high-dimensional manifolds\, significantly reducing computational complexity and resource usage by 90\%%
 }
 
 \newcommand{\bulletsXULA}{%
@@ -64,7 +63,6 @@ Computer Science (minor)}%
 }
 %
 \newcommand{\expIBM}{%
-  Developed features to automate event analytics analysis and prediction for operation engineers using machine learning,%
-  Developed two internationally-used mobile apps for both Android and iOS,%
-  Automated entire team\, saving IBM approximately \$1\,000\,000/year%
+  Automated entire team\, saving IBM \$1\,000\,000/year,%
+  Automated event analysis and prediction for operation engineers using machine learning%
 }

@@ -8,13 +8,13 @@
 \sect{Research Experience}%
 \ifnum\expIU=1%
 \expBullets{\cWR}{Indiana University Bloomington}{Aug 2021 - Present}{Dr. Eduardo Izquierdo \& Dr. Justin Wood}{\bulletsIU}%
-\fi
+\fi%
 \ifnum\expXULA=1%
 \expBullets{\cWR}{Xavier University of Louisiana}{Aug 2013 - May 2017}{Dr. Jeremy Cohen}{\bulletsXULA}%
-\fi
+\fi%
 \ifnum\expDartmouth=1%
 \expBullets{\cWR}{Dartmouth College}{June 2016 - Aug 2016}{Dr. Todd F. Heatherton}{\bulletsDartmouth}%
-\fi
+\fi%
 \vspace{-4mm}%
 }%
 % Header
@@ -35,6 +35,10 @@
 
 \pubs%
 \education%
+\ifnum\workhistoryL=1%
+  \workexp{\cWL}%
+\fi
+\footnote[0]{* coursework complete}%
 %
 %
 \end{minipage}%
@@ -42,12 +46,11 @@
 %
 % Right Column
 \noindent \begin{minipage}[t]{\cWR}%
-
+%
 \researchexp%
 \ifnum\workhistoryR=1%
   \workexp{\cWR}%
 \fi
-\footnote[0]{* coursework complete}%
 %
 \end{minipage}% no space if you would like to put them side by side
 \vspace{-1in}

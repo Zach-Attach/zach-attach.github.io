@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber master"] 1704060228 "master.bcf" "master.bbl" "master" 1704219675
-  "master.bcf" 1704219675 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
+["biber master"] 1704060228 "master.bcf" "master.bbl" "master" 1704739348
+  "master.bcf" 1704739348 122485 10b51fd3a7543aef9a5f9b0a0a830de1 "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
-["pdflatex"] 1704219674 "/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex" "master.pdf" "master" 1704219675
+["pdflatex"] 1704739347 "/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex" "master.pdf" "master" 1704739348
   "/Users/zyle/Code/zach-attach.github.io/latex/resume/master.tex" 1704061645 2687 e8905777f2d9c0c46a33d60150d49b89 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -187,14 +187,14 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677795340 2826435 8a8e7df4b0d0f40a8963a6abe21acae4 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "body.aux" 1704219675 4328 56d01eaf60ac31818120a9b89af5df36 "pdflatex"
-  "body.tex" 1704155109 1721 02cb8ef5f2bbce304a2928aec38f66fe ""
-  "layout.tex" 1704218606 3518 f7f74e75bb5d14279d2f39f6f94814e7 ""
-  "master.aux" 1704219675 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
+  "body.aux" 1704739348 4328 0f121eb28c520b8a7980a76cccf60cba "pdflatex"
+  "body.tex" 1704739345 1772 8de0f066909a798ae654f7aefb6c071c ""
+  "layout.tex" 1704739225 3294 ee738bd7d8dfba0d077c152d97ea1477 ""
+  "master.aux" 1704739348 460 306a84eef5b81032f1e905c6573d1db4 "pdflatex"
   "master.bbl" 1704060230 6280 b9a694f12575e7066e2ca8a743a525b4 "biber master"
-  "master.run.xml" 1704219675 2435 58c3a4be4f9df194055856c8e6444638 "pdflatex"
+  "master.run.xml" 1704739348 2435 58c3a4be4f9df194055856c8e6444638 "pdflatex"
   "master.tex" 1704061645 2687 e8905777f2d9c0c46a33d60150d49b89 ""
-  "resume.sty" 1704219604 4483 1da8b7ea3d2e99c1004e0b680e71edfd ""
+  "resume.sty" 1704324664 4500 d5201b9eea071f5f0b5b5e4bb1b2b4a3 ""
   (generated)
   "body.aux"
   "master.aux"

@@ -105,11 +105,12 @@
   \vspace{-2mm}
 }%
 %
-\newcommand{\expBullets}[5]{
+\newcommand{\expBullets}[5]{%
   %where = #1
   %when = #2
   %who = #3
   %what = #4
+  \vspace{-1mm}
   \begin{tcolorbox}[colback=boxColor_default, colframe=borderColor_default, arc=2mm, boxrule=0.1mm, left=1mm, right=1mm, top=1mm, bottom=2mm, width=#1, before skip=2mm, after skip=2mm, valign=center]%
     \flushleft{\textit{#2} \hfill #3}%
     \vspace{-2mm}%
