@@ -537,23 +537,27 @@
                     <form class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="name" class="contact__label">Name</label>
+                                <input id="form-name" type="text" class="contact__input">
+                                <span class="error__message">Please enter a name.</span>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input id="form-email" type="email" class="contact__input">
+                                <span class="error__message">Please enter a valid e-mail address.</span>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Title</label>
-                                <input type="text" class="contact__input">
+                                <label for="title" class="contact__label">Title</label>
+                                <input id="form-title" type="text" class="contact__input">
+                                <span class="error__message">Please enter a title.</span>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="" cols="0" rows="7" class="contact__input"></textarea>
+                                <label for="message" class="contact__label">Message</label>
+                                <textarea id="form-message" name="" cols="0" rows="7" class="contact__input"></textarea>
+                                <span class="error__message">Please enter a message.</span>
                             </div>
                             <div>
-                                <a href="#" class="button button--flex">
+                                <a id="contact-button" class="button button--flex">
                                     Send Message
                                     <i class="uil uil-message button__icon"></i>
                                 </a>

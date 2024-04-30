@@ -159,3 +159,162 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// Contact Form
+
+const isValidEmail = (email) => {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+  // //using regular expressions, validate email
+  // var contactFormUtils = window.contactFormUtils = {,
+  //   //if no form errors, remove or hide error messages
+  //   clearErrors: function () {
+  //     $('#emailAlert').remove();
+  //     $('#feedbackForm .help-block').hide();
+  //     $('#feedbackForm .form-group').removeClass('has-error');
+  //   },
+  //   //upon form clear remove the checked class and replace with unchecked class. Also reset Google ReCaptcha
+  //   clearForm: function () {
+  //     $('#feedbackForm .glyphicon').removeClass('glyphicon-check').addClass('glyphicon-unchecked').css({color: ''});
+  //     $('#feedbackForm input,textarea').val("");
+  //     grecaptcha.reset();
+  //   },
+  //   //when error, show error messages and track that error exists
+  //   addError: function ($input) {
+  //     var parentFormGroup = $input.parents('.form-group');
+  //     parentFormGroup.children('.help-block').show();
+  //     parentFormGroup.addClass('has-error');
+  //   },
+  //   addAjaxMessage: function(msg, isError) {
+  //     $("#feedbackSubmit").after('<div id="emailAlert" class="alert alert-' + (isError ? 'danger' : 'success') + '" style="margin-top: 5px;">' + $('<div/>').text(msg).html() + '</div>');
+  //   }
+  // };
+
+const contactBtn = document.getElementById('contact-button')
+
+/* Validate if constant exists */
+if(contactBtn){
+    contactBtn.addEventListener('click', () =>{
+      const formName = document.getElementById('form-name')
+      const formEmail = document.getElementById('form-email')
+      const formTitle = document.getElementById('form-title')
+      const formMessage = document.getElementById('form-message')
+
+      document.querySelectorAll('.contact__content').forEach((el) => {
+        el.classList.remove('active__error')
+      })
+
+      let errors = false;
+
+      if (!formName.value) {
+        formName.parentElement.classList.add('active__error')
+        // formName.classList.add('active__error')
+        errors = true;
+      }
+
+      if (!isValidEmail(formEmail.value)) {
+        formEmail.parentElement.classList.add('active__error')
+        // formEmail.classList.add('active__error')
+        errors = true;
+      }
+
+      if (!formTitle.value) {
+        formTitle.parentElement.classList.add('active__error')
+        // formTitle.classList.add('active__error')
+        errors = true;
+      }
+
+      if (!formMessage.value) {
+        formMessage.parentElement.classList.add('active__error')
+        // formMessage.classList.add('active__error')
+        errors = true;
+      }
+
+      if (errors) {
+        return;
+      }
+
+      // continue with the rest of the code...
+      // Send email
+      const emailData = {
+        from: formEmail.value,
+        subject: formTitle.value,
+        text: `${formMessage.value}\n\nFrom: ${formName.value}`
+      };
+
+      fetch('php/mail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8'
+        },
+        body: JSON.stringify(emailData)
+      })
+      // .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // Handle success response
+        })
+        .catch(error => {
+          console.error(error);
+          // Handle error
+        });
+    })
+
+
+// $(".contact__button").click(function() {
+//   var $btn = $(this);
+//   $btn.button('loading');
+//   contactFormUtils.clearErrors();
+
+//   //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
+//   //use bootstrap validator (https://github.com/1000hz/bootstrap-validator) if provided, otherwise a bit of custom validation
+//   var $form = $("#feedbackForm"),
+//     hasErrors = false;
+//   if ($form.validator) {
+//     hasErrors =  $form.validator('validate').hasErrors;
+//   } else {
+//     $('#feedbackForm input,#feedbackForm textarea').not('.optional').each(function() {
+//       var $this = $(this);
+//       if (($this.is(':checkbox') && !$this.is(':checked')) || !$this.val()) {
+//         hasErrors = true;
+//         contactFormUtils.addError($(this));
+//       }
+//     });
+//     var $email = $('#email');
+//     if (!contactFormUtils.isValidEmail($email.val())) {
+//       hasErrors = true;
+//       contactFormUtils.addError($email);
+//     }
+//     var $phone = $('#phone');
+//     if ($phone.val() && $phone.intlTelInput && !$phone.intlTelInput("isValidNumber")) {
+//       hasErrors = true;
+//       contactFormUtils.addError($phone.parent());
+//     }
+//   }
+//   //if there are any errors return without sending e-mail
+//   if (hasErrors) {
+//     $btn.button('reset');
+//     return false;
+//   }
+//   //send the feedback e-mail
+//   $.ajax({
+//     type: "POST",
+//     url: "library/sendmail.php",
+//     data: $form.serialize(),
+//     success: function(data) {
+//       contactFormUtils.addAjaxMessage(data.message, false);
+//       contactFormUtils.clearForm();
+//     },
+//     error: function(response) {
+//       contactFormUtils.addAjaxMessage(response.responseJSON.message, true);
+//     },
+//     complete: function() {
+//       $btn.button('reset');
+//     }
+//  });
+//   return false;
+// });
+
+}
