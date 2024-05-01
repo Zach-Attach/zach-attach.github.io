@@ -470,36 +470,68 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__python{
-  width: 95%;
-}
-
 .skills__pytorch{
   width: 60%;
 }
 
-.skills__numpy{
-  width: 80%;
+.skills__sb3{
+  width: 70%;
 }
 
-.skills__r{
-  width: 65%;
+.skills__mlagents{
+  width: 70%;
 }
 
-.skills__javascript{
+.skills__tensorflow{
+  width: 50%;
+}
+
+.skills__mathematica{
+  width: 60%;
+}
+
+.skills__networkx{
   width: 90%;
 }
 
-.skills__java{
-  width: 80%;
+.skills__numpy{
+  width: 90%;
 }
 
-.skills__react{
-  width: 70%;
+.skills__tellurium{
+  width: 60%;
+}
+
+.skills__git{
+  width: 90%;
+}
+
+.skills__shell{
+  width: 90%;
+}
+
+.skills__linux{
+  width: 80%;
 }
 
 .skills__kubernetes{
   width: 60%;
+}
+
+.skills__r{
+  width: 70%;
+}
+
+.skills__matplotlib{
+  width: 75%;
+}
+
+.skills__latex{
+  width: 70%;
+}
+
+.skills__pandas{
+  width: 65%;
 }
 
 .skills__close .skills__list{
@@ -689,49 +721,6 @@ img {
 .contact__subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-}
-
-.contact__content {
-  background-color: var(--input-color);
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem;
-  margin-bottom: 1.5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-
-.contact__content>textarea {
-  resize: vertical;
-}
-
-.contact__label {
-  font-size: var(--smaller-font-size);
-  color: var(--title-color);
-}
-
-.contact__input {
-  width: 100%;
-  background-color: var(--input-color);
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
-  padding: 0.25rem 0.5rem 0.5rem 0;
-}
-
-.error__message {
-  color: red;
-  font-size: var(--smaller-font-size);
-  margin-top: var(--mb-0-25);
-}
-
-:not(.active__error) > .error__message{
-  display: none;
-}
-
-.active__error > .error__message{
-  display: block;
 }
 
 /*==================== FOOTER ====================*/

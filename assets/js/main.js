@@ -238,18 +238,17 @@ if(contactBtn){
 
       // continue with the rest of the code...
       // Send email
-      const emailData = {
-        from: formEmail.value,
-        subject: formTitle.value,
-        text: `${formMessage.value}\n\nFrom: ${formName.value}`
+      const data = {
+        email: encodeURIComponent(formEmail.value),
+        title: encodeURIComponent(formTitle.value),
+        message: encodeURIComponent(formMessage.value),
+        name: encodeURIComponent(formName.value)
       };
 
-      fetch('php/mail.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json; charset=utf-8'
-        },
-        body: JSON.stringify(emailData)
+      
+
+      fetch(`https://usebasin.com/f/002f4d2f2f7a`, {
+        method: 'POST'
       })
       // .then(response => response.json())
         .then(data => {
@@ -261,6 +260,12 @@ if(contactBtn){
           // Handle error
         });
     })
+
+    frame.addEventListener("load", ev => {
+      const new_style_element = document.createElement("style");
+      new_style_element.textContent = ".col-form-label {font-size: var(--smaller-font-size) !important; color: var(--title-color) !important;}"
+      ev.target.contentDocument.head.appendChild(new_style_element);
+    });
 
 
 // $(".contact__button").click(function() {
