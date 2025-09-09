@@ -558,7 +558,7 @@ img {
 }
 
 .qualification__item:hover .qualification__data {
-    bottom: 0;
+    left: 0;
 }
 
 .qualification__img {
@@ -575,8 +575,8 @@ img {
 
 .qualification__data {
   position: absolute;
-  bottom: -100%;
-  left: 0;
+  left: 100%;
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -587,6 +587,7 @@ img {
   padding: 1rem;
   color: white;
   background: linear-gradient(to left, rgba(0,0,0,0.9), transparent);
+  /* transition: transform 1s ease;  */
   transition: .3s ease;
 }
 
