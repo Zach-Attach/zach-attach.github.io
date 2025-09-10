@@ -625,7 +625,6 @@ img {
     overflow: hidden;
     cursor: pointer;
     height: 350px; /* Or a height that suits your design */
-    overflow: hidden;
 }
 
 .qualification__item:hover .qualification__data {
