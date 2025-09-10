@@ -5,8 +5,14 @@
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
+    /*========== Colors =========.home__blob{
+  width: 300px;
+  fill: var(--first-color);
+}
+
+.home__blob-img {
+  width: 240px;
+}/* Change favorite color */
     --hue-color: 210; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
@@ -145,7 +151,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 800px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -283,12 +289,12 @@ img {
 }
 
 .home__blob{
-  width: 200px;
+  width: 300px;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 160px;
+  width: 250px;
 }
 
 .home__data {
@@ -543,6 +549,67 @@ img {
 .skills__open skills__arrow{
   transform: rotate(-180deg);
 }
+
+.skills__bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.skills__bubble {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 6s ease-in-out infinite;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.skills__bubble--with-text {
+    flex-direction: column;
+    gap: var(--mb-0-5);
+}
+
+.skills__bubble:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.skills__bubble img {
+    max-width: 150px;
+    max-height: 75px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.skills__bubble:nth-child(2) { animation-delay: 1s; }
+.skills__bubble:nth-child(3) { animation-delay: 2.5s; }
+.skills__bubble:nth-child(4) { animation-delay: 1.5s; }
+.skills__bubble:nth-child(5) { animation-delay: 3s; }
+.skills__bubble:nth-child(6) { animation-delay: 0.5s; }
+.skills__bubble:nth-child(7) { animation-delay: 2s; }
+.skills__bubble:nth-child(8) { animation-delay: 3.5s; }
+.skills__bubble:nth-child(9) { animation-delay: 1.2s; }
+.skills__bubble:nth-child(10) { animation-delay: 2.8s; }
+.skills__bubble:nth-child(11) { animation-delay: 0.8s; }
+.skills__bubble:nth-child(12) { animation-delay: 2.2s; }
 
 /*==================== QUALIFICATION ====================*/
 .qualification__container {
