@@ -7,14 +7,6 @@
 
     /*========== Colors ==========*/
 
-.home__blob{
-  width: 300px;
-  fill: var(--first-color);
-}
-
-.home__blob-img {
-  width: 240px;
-}
 /* Change favorite color */
     --hue-color: 210; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
