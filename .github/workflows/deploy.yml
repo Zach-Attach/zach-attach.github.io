@@ -39,11 +39,11 @@ jobs:
         npm install -g cssnano-cli
         npm install -g terser
 
-    - name: Minify HTML, CSS, and JavaScript
-      run: |
-        find . -name '*.html' -exec html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o {} {} \;
-        find . -name '*.css' -exec cssnano {} {} \;
-        find . -name '*.js' -exec terser -c -m -o {} -- {} \;
+    # - name: Minify HTML, CSS, and JavaScript
+    #   run: |
+    #     find . -name '*.html' -exec html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o {} {} \;
+    #     find . -name '*.css' -exec cssnano {} {} \;
+    #     find . -name '*.js' -exec terser -c -m -o {} -- {} \;
     - name: Setup Pages
       uses: actions/configure-pages@v5
 
