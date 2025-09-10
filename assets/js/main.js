@@ -323,3 +323,20 @@ if(contactBtn){
 // });
 
 }
+
+/*==================== PARALLAX ====================*/
+document.addEventListener('scroll', function() {
+    const parallaxItems = document.querySelectorAll('.qualification__item');
+    const speed = 0.3;
+
+    parallaxItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (itemTop < windowHeight && itemTop > -item.offsetHeight) {
+            const img = item.querySelector('.qualification__img');
+            const yPos = -(itemTop * speed);
+            img.style.transform = `translateY(${yPos}px)`;
+        }
+    });
+});
