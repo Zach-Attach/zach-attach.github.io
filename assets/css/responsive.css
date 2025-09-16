@@ -1,18 +1,105 @@
-/* Font size for large devices */
+/*==================== MEDIA QUERIES ====================*/
+/* For mobile devices */
+@media screen and (max-width: 968px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .home__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    row-gap: 0;
+    padding-top: 0;
+    align-items: center;
+    align-content: center;
+  }
+
+  .home__header {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  .home__social {
+    padding-bottom: 0;
+  }
+
+  .home__description {
+    margin-bottom: 0;
+  }
+
+  .home__img {
+    order: -1;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home__blob {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification__data {
+    gap: 0.5rem;
+  }
+
+  .project__img {
+    width: 200px;
+  }
+
+  .footer__copy {
+    margin-right: 20px;
+  }
+}
+
+/* For desktop devices */
 @media screen and (min-width: 968px) {
   :root {
-      --big-font-size: 3rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: 0.875rem;
-      --smaller-font-size: 0.813rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 
 .home__content {
-        grid-template-columns: 420px 450px;
-        column-gap: 1fr;
+        grid-template-columns: 35% 40%;
+        gap: 15%;
 }
 }
 
@@ -127,6 +214,7 @@
 } */
 
 @media screen and (min-width: 768px) {
+
   .container {
       margin-left: auto;
       margin-right: auto;
@@ -178,10 +266,10 @@
   .change-theme {
       margin: 0;
   }
-
+/* 
   .home__content {
       column-gap: 0.5rem;
-  }
+  } */
 
   .home__scroll {
       display: block;
