@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <!--==================== FAVICON ====================-->
+        <link href="assets/img/icon.ico" rel="icon"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Zachary Laborde</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Zachary Laborde</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container">
+                    <div class="home__content grid">
+                        <div class="home__header">
+                            <div class="home__data">
+                                <h1 class="home__title">Hi, I'm Zachary</h1>
+                                <h3 class="home__subtitle">PhD Student</h3>
+                                <p class="home__description">Improving Artificial Intelligence with Natural Intelligence.</p>
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me<i class="uil uil-message button__icon"></i>
+                                </a>
+                            </div>
+                            <div class="home__social">
+                                <a href="https://www.linkedin.com/in/zachlaborde" aria-label="home__social-icon" target="_blank"
+                                    class="home__social-icon">
+                                    <i class="uil uil-linkedin-alt"></i>
+                                </a>
+                                <a href="https://github.com/Zach-Attach" aria-label="home__social-icon" target="_blank"
+                                    class="home__social-icon">
+                                    <i class="uil uil-github-alt"></i>
+                                </a>
+                            </div>
+                            <div class="home__scroll">
+                                <a href="#about" class="home__scroll-button button--flex">
+                                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                    <span class="home__scroll-name">Scroll down</span>
+                                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 170 180" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <image class="home__blob-img" x="0" y="0" xlink:href="assets/img/headshot.png" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">I am a PhD student in Cognitive Science and Neuroscience at Indiana University. I work in the Building a Mind Lab, uncovering how AI models operate in embodied contexts in comparison to natural intelligence and unifying the cognition sciences under a single framework.</p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">4</span>
+                                <span class="about__info-name">years experience <br> in Industry</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">8</span>
+                                <span class="about__info-name">years experience <br> in Research</span>
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/Laborde_CV_2025_Fall.pdf" class="button button--flex">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+                <div class="skills__container">
+                    <div class="skills__bubble-container">
+                        <a href="https://pytorch.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/pytorch.png" alt="PyTorch"></a>
+                        <a href="https://lightning.ai/" target="_blank" class="skills__bubble"><img src="assets/img/skills/lightning.jpg" alt="PyTorch Lightning"></a>
+                        <a href="https://stable-baselines3.readthedocs.io/" target="_blank" class="skills__bubble">
+                            <img src="assets/img/skills/sb3.webp" alt="Stable Baselines3">
+                            Stable Baselines3
+                        </a>
+                        <a href="https://gymnasium.farama.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/gymnasium.png" alt="Gymnasium"></a>
+                        <a href="https://rllte.rlevolution.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/rllte.jpg" alt="RLLTE"></a>
+                        <a href="https://scikit-learn.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/sklearn.jpg" alt="Scikit-learn"></a>
+                        <a href="https://pandas.pydata.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/pandas.jpg" alt="Pandas"></a>
+                        <a href="https://numpy.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/numpy.jpg" alt="NumPy"></a>
+                        <a href="https://networkx.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/networkx.jpg" alt="NetworkX"></a>
+                        <a href="https://opencv.org/" target="_blank" class="skills__bubble"><img src="assets/img/skills/opencv.jpg" alt="OpenCV"></a>
+                        <a href="https://git-scm.com/" target="_blank" class="skills__bubble"><img src="assets/img/skills/git.jpg" alt="Git"></a>
+                        <a href="https://unity.com/" target="_blank" class="skills__bubble"><img src="assets/img/skills/unity.jpg" alt="Unity"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Experience</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__item">
+                        <img src="assets/img/background/iu.png" alt="qualification image" class="qualification__img">
+                        <div class="qualification__data">
+                            <h3 class="qualification__title">PhD in Cognitive Science & Neuroscience</h3>
+                            <span class="qualification__subtitle">Indiana University Bloomington</span>
+                            <div>
+                                <a class="qualification__subsubtitle" href="https://www.buildingamind.com/" target="_blank">
+                                    Building a Mind Lab
+                                </a>
+                            </div>
+                            <div>
+                                <a class="qualification__subsubtitle" href="https://www.iu.edu" target="_blank">
+                                    Computational Neuroethology Lab
+                                </a>
+                            </div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 - 2026
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__item">
+                        <img src="assets/img/background/ibm1.jpg" alt="qualification image" class="qualification__img">
+                        <div class="qualification__data">
+                            <h3 class="qualification__title">Software Engineer</h3>
+                            <span class="qualification__subtitle">IBM</span>
+                            <div>
+                                <a class="qualification__subsubtitle" href="https://www.ibm.com/cloud" target="_blank">
+                                    IBM Cloud
+                                </a>
+                            </div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017 - 2021
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__item">
+                        <img src="assets/img/background/dartmouth.png" alt="qualification image" class="qualification__img">
+                        <div class="qualification__data">
+                            <h3 class="qualification__title">Research Assistant</h3>
+                            <span class="qualification__subtitle">Dartmouth College</span>
+                            <div>
+                                <a class="qualification__subsubtitle" href="https://sites.dartmouth.edu/canlab/" target="_blank">
+                                    Cognitive and Affective Neuroscience Lab
+                                </a>
+                            </div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2016
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 4 ====================-->
+                    <div class="qualification__item">
+                        <img src="assets/img/background/xavier.png" alt="qualification image" class="qualification__img">
+                        <div class="qualification__data">
+                            <h3 class="qualification__title">B.S. in Psychology, Minor in Computer Science</h3>
+                            <div>
+                                <a class="qualification__subsubtitle" href="https://www.xula.edu/" target="_blank">
+                                    Xavier University of Louisiana
+                                </a>
+                            </div>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2013 - 2017
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+    
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./assets/img/portfolio1.jpg" alt="portfolio image 1" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Newborn Embodied Turing Test</h3>
+                                <p class="portfolio__description">Benchmarking Virtual Agents in Controlled-Rearing Conditions</p>
+                                <a href="https://github.com/buildingamind/NewbornEmbodiedTuringTest" class="button button--flex button--small portfolio__button">
+                                    More Information
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./assets/img/portfolio2.jpg" alt="portfolio image 2" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Spatial Embedded Edge Model</h3>
+                                <p class="portfolio__description">A Model for Comparison to the C. Elegans Neural Network</p>
+                                <a href="https://github.com/Zach-Attach/SEEM" class="button button--flex button--small portfolio__button">
+                                    More Information
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./assets/img/portfolio3.jpg" alt="portfolio image 3" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Dynamical Analysis of Homeostatic Cellular Topologies</h3>
+                                <p class="portfolio__description">An online tool for understanding and manipulating the population dynamics of cellular lineages.</p>
+                                <a href="https://nanohub.org/resources/dynsysregen" class="button button--flex button--small portfolio__button">
+                                    More Information
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./assets/img/portfolio4.jpg" alt="portfolio image 4" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">IBM Cloud Event Management</h3>
+                                <p class="portfolio__description">A website and mobile app for tracking, managing, and alerting to server events for DevOps.</p>
+                                <a href="https://www.ibm.com/docs/en/cloud-private/3.2.0?topic=paks-cloud-event-management" class="button button--flex button--small portfolio__button">
+                                    More Information
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+    
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle contact__subtitle">Get in touch</span>
+    
+                <div class="contact__container container ">
+                    <form class="contact__form">
+                        <div class="contact__inputs">
+                            <iframe src="https://usebasin.com/form/002f4d2f2f7a/view/0981e90d7e7c?iframe=true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title"> Zachary Laborde</h1>
+                        <span class="footer__subtitle">PhD Student</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/zachlaborde " aria-label="footer__social" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Zach-Attach" aria-label="footer__social" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
