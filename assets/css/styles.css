@@ -23,7 +23,7 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-    --github-color: #0f9;
+    --github-color: #5FED83;
     --linkedin-color: #0e76a8;
 
     /*========== Font and typography ==========*/
@@ -361,15 +361,15 @@ img {
 .github__button{
   background-color: #000;
   color: var(--github-color);
-  font-size: 30px;
-  padding: 5px 10px 5px 10px;
+  font-size: 40px;
+  padding: 0px 10px 0px 10px;
 }
 
 .linkedin__button{
   background-color: var(--linkedin-color);
   color: #fff;
-  font-size: 30px;
-  padding: 5px 10px 5px 10px;
+  font-size: 40px;
+  padding: 0px 10px 0px 10px;
 }
 
 /*==================== ABOUT ====================*/
