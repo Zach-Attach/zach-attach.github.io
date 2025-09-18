@@ -11,6 +11,7 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
+    padding: 2rem 0.25rem 4rem;
   }
 
   .grid {
@@ -20,10 +21,6 @@
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-  }
-
-  .nav__menu {
-    padding: 2rem 0.25rem 4rem;
   }
 
   .nav__list {
@@ -80,84 +77,6 @@
     width: 200px;
   }
 
-  .footer__copy {
-    margin-right: 20px;
-  }
-}
-
-/* For desktop devices */
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
-
-.home__content {
-        grid-template-columns: 35% 40%;
-        gap: 15%;
-}
-}
-
-@media screen and (max-width: 767px) {
-  .nav__menu {
-      position: fixed;
-      bottom: -100%;
-      left: 0;
-      width: 100%;
-      background-color: var(--body-color);
-      padding: 2rem 1.5rem 4rem;
-      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 1.5rem 1.5rem 0 0;
-      transition: 0.3s;
-  }
-}
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-@media screen and (max-width: 567px) {
-  .grid {
-      grid-template-columns: 1fr;
-  }
-
-  .container {
-      margin-left: var(--mb-1);
-      margin-right: var(--mb-1);
-  }
-
-  .nav__menu {
-      padding: 2rem 0.25rem 4rem;
-  }
-
-  .nav__list {
-      column-gap: 0;
-  }
-
-  .home__content {
-      grid-template-columns: 1fr;
-      grid-template-rows: 60% 40%;
-      row-gap: 0;
-      padding-top: 0;
-      align-items: center;
-      align-content: center;
-  }
-
-  .home__header {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      justify-content: center;
-      border-radius: 0;
-  }
-
-  .home__social {
-      padding-bottom: 0;
-  }
-
   .home__description {
       margin-bottom: 0;
   }
@@ -188,32 +107,23 @@
   }
 }
 
-/* For medium devices */
-/* @media screen and (min-width: 568px) {
-  .home__content {
-      grid-template-columns: 40% 60%;
+
+/* For desktop devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 
-  .home__img {
-      order: 1;
-  }
-
-  .about__container,
-  .portfolio__content,
-  .project__container,
-  .contact__container,
-  .footer__container {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .qualification__sections {
-      display: grid;
-      grid-template-columns: 0.6fr;
-      justify-content: center;
-  }
-} */
-
-@media screen and (min-width: 768px) {
+.home__content {
+    grid-template-columns: 35% 50%;
+    gap: 5%;
+}
 
   .container {
       margin-left: auto;
@@ -266,10 +176,6 @@
   .change-theme {
       margin: 0;
   }
-/* 
-  .home__content {
-      column-gap: 0.5rem;
-  } */
 
   .home__scroll {
       display: block;
@@ -317,6 +223,7 @@
 
   .portfolio__content {
       align-items: center;
+      column-gap: 5rem;
   }
 
   .project {
@@ -356,27 +263,8 @@
       justify-self: flex-end;
   }
 
-  .footer__copy {
-      margin-top: 4.5rem;
-  }
-}
-
-/* For large devices */
-
-@media screen and (min-width: 1024px) {
-
-  .header,
-  .main,
-  .footer__container {
-      padding: 0;
-  }
-
   .home__social {
       transform: translateX(-6rem);
-  }
-
-  .portfolio__content {
-      column-gap: 5rem;
   }
 
   .swiper-portfolio-icon {
@@ -397,41 +285,5 @@
 
   .contact__inputs {
       grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-/* MOBILE DEVICES  */
-@media (min-width:320px) and (max-width:480px) {
-  .home__content {
-      padding-top: 0px;
-  }
-
-  .home__img {
-      display: flex;
-      justify-content: center;
-  }
-
-  .footer__copy {
-      margin-right: 20px;
-  }
-}
-
-/* TABLET DEVICES  */
-@media (min-width:481px) and (max-width:768px) {
-  .home__content {
-      padding-top: 0px;
-  }
-
-  .home__img {
-      display: flex;
-      justify-content: center;
-  }
-}
-
-/* LAPTOP DEVICES  */
-@media (min-width:769px) and (max-width:1023px) {
-  .home__content {
-      padding-top: 0px;
   }
 }
