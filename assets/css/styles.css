@@ -23,6 +23,8 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --github-color: #0f9;
+    --linkedin-color: #0e76a8;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -282,11 +284,13 @@ img {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.home__social{
+.home__social {
   display: flex;
   column-gap: 1rem;
   align-items: center;
-  padding-bottom: 1rem;
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .home__social-icon{
@@ -352,6 +356,20 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+.github__button{
+  background-color: #000;
+  color: var(--github-color);
+  font-size: 30px;
+  padding: 5px 10px 5px 10px;
+}
+
+.linkedin__button{
+  background-color: var(--linkedin-color);
+  color: #fff;
+  font-size: 30px;
+  padding: 5px 10px 5px 10px;
 }
 
 /*==================== ABOUT ====================*/
