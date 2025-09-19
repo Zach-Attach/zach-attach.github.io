@@ -335,7 +335,8 @@ img {
 
 /*==================== BUTTONS ====================*/
 .button{
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
@@ -353,23 +354,24 @@ img {
   transition: .3s;
 }
 
-.button--flex {
-  display: inline-flex;
-  align-items: center;
-}
-
 .github__button{
   background-color: #000;
   color: var(--github-color);
-  font-size: 40px;
-  padding: 0px 10px 0px 10px;
 }
 
 .linkedin__button{
   background-color: var(--linkedin-color);
   color: #fff;
-  font-size: 40px;
-  padding: 0px 10px 0px 10px;
+}
+
+.image__button{
+  font-size: 3rem;
+  padding: 0px 1rem 0px 1rem;
+}
+
+.text__button{
+  font-size: 2rem;
+  padding: .75rem 1rem .75rem 1rem;
 }
 
 /*==================== ABOUT ====================*/
