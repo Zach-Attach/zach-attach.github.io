@@ -384,10 +384,98 @@ img {
 
 .about__img-container {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.collage-row {
+  display: flex;
   justify-content: center;
-  margin-bottom: var(--mb-1);
+  gap: 15px;
   flex-wrap: wrap;
+}
+
+.about__img-container .about__img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.about__img-container .about__img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #bbb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.collage-row:nth-child(1) .about__img:nth-child(1) {
+  width: 200px;
+  height: 200px;
+}
+
+.collage-row:nth-child(1) .about__img:nth-child(2) {
+  width: 200px;
+  height: 200px;
+}
+
+.collage-row:nth-child(2) .about__img:nth-child(1) {
+  width: 130px;
+  height: 130px;
+}
+
+.collage-row:nth-child(2) .about__img:nth-child(2) {
+  width: 130px;
+  height: 130px;
+}
+
+.collage-row:nth-child(2) .about__img:nth-child(3) {
+  width: 140px;
+  height: 140px;
 }
 
 .about_description {

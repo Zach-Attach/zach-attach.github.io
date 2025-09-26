@@ -340,3 +340,27 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
+/*==================== IMAGE MODAL ====================*/
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("modal-img");
+const modalClose = document.getElementById("modal-close");
+const images = document.querySelectorAll('.about__img');
+
+images.forEach(function(img) {
+  img.addEventListener('click', function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+  });
+});
+
+modalClose.addEventListener('click', function() {
+  modal.style.display = "none";
+});
+
+modal.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
