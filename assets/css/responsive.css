@@ -69,22 +69,54 @@
     font-size: var(--normal-font-size);
   }
 
+  .qualification__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .qualification__img {
+    width: 100%;
+  }
+
   .qualification__data {
+    position: static;
+    width: 100%;
+    left: auto;
+    background: var(--container-color);
+    color: var(--text-color);
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     gap: 0.5rem;
+    margin-top: auto;
+  }
+
+  .qualification__title {
+    color: var(--title-color);
+  }
+
+  .qualification__subtitle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  .qualification__subsubtitle {
+    color: var(--text-color);
+  }
+
+  .qualification__subsubtitle:hover {
+    color: var(--first-color);
+  }
+
+  .qualification__calendar {
+    color: var(--text-color-light);
+    margin-top: var(--mb-0-5);
   }
 
   .project__img {
     width: 200px;
-  }
-
-  .collage-row:nth-child(1) .about__img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .collage-row:nth-child(2) .about__img {
-    width: 100px;
-    height: 100px;
   }
 
   .home__description {
@@ -112,7 +144,6 @@
       grid-template-columns: repeat(4, minmax(70px, 1fr));
       grid-template-rows: repeat(3, auto);
       gap: 0.4rem;
-      /* max-width: 320px; */
   }
 
   .skills__bubble {
@@ -120,23 +151,13 @@
       min-height: 50px;
   }
 
-  /* .skills__bubble img {
-      max-width: 60px;
-      max-height: 30px;
-  } */
-
-  .qualification__data {
-      gap: 0.5rem;
-  }
-
   .project__img {
       width: 200px;
   }
 }
 
-
 /* For desktop devices */
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 969px) {
   :root {
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -151,11 +172,6 @@
     grid-template-columns: 35% 50%;
     gap: 5%;
 }
-
-  .container {
-      margin-left: auto;
-      margin-right: auto;
-  }
 
   body {
       margin: 0;
@@ -298,24 +314,4 @@
   .contact__inputs {
       grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/* For tablets and medium screens */
-@media screen and (min-width: 568px) and (max-width: 967px) {
-  .skills__bubble-container {
-      grid-template-columns: repeat(4, minmax(90px, 1fr));
-      grid-template-rows: repeat(3, auto);
-      gap: 0.5rem;
-      /* max-width: 400px; */
-  }
-
-  /* .skills__bubble {
-      padding: 0.7rem;
-      min-height: 55px;
-  } */
-
-  /* .skills__bubble img {
-      max-width: 75px;
-      max-height: 38px;
-  } */
 }
