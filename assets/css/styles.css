@@ -367,31 +367,25 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__container {
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
 }
 
 .about__carousel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 200px;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background: var(--container-color);
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+
+.about__carousel-container::-webkit-scrollbar {
+  display: none;
 }
 
 .about__carousel-track {
   display: flex;
-  width: 600%; /* 6 sets of images */
-  height: 100%;
-  animation: scrollLeft 150s linear infinite; /* Much longer duration */
-  gap: 1rem;
-  align-items: center;
-  padding: 1rem 0;
-  box-sizing: border-box;
-  /* Ensure images are evenly distributed */
-  justify-content: flex-start;
+  gap: 1em;
+  animation: scrollLeft 60s infinite linear;
 }
 
 .about__carousel-container:hover .about__carousel-track {
@@ -399,24 +393,22 @@ img {
 }
 
 @keyframes scrollLeft {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-83.33%); /* Move 5/6 of the track (leaving 1 set visible) */
+  to {
+    transform: translateX(-100%);
   }
 }
 
 .about__img{
-  width: 180px;
-  height: 180px;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 1.5rem;
   transition: transform 0.3s ease;
-  flex-shrink: 0;
-  cursor: pointer;
-  margin: 0 0.5rem; /* Additional spacing for perfect distribution */
+}
+
+.about__card {
+  width: 250px;
+  height: 100%;
 }
 
 /* Modal styles */
@@ -727,46 +719,26 @@ img {
     z-index: 0;
 }
 
-/* .qualification__item:hover .qualification__data {
-    left: 0;
-} */
-
 .qualification__img {
-  width: calc(100% - 10rem);
+  width: calc(100% - 20rem);
   min-height: 700px;
-  /* height: 700px; */
   object-fit: cover;
-  /* filter: brightness(0.5); */
   transition: filter .3s ease;
   position: absolute;
   align-items: self-start;
-  /* top: -20%; */
   left: 0;
   z-index: -1;
 }
 
-/* .qualification__item:hover .qualification__img {
-    filter: brightness(0.4);
-} */
-
 .qualification__data {
   position: absolute;
-  width: 10rem;
-  left: calc(100% - 10rem);
-  /* left: 100%;
-  top: 0;
-  width: 100%;
-  height: 100%; */
+  width: 20rem;
+  left: calc(100% - 20rem);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
   padding: 1rem;
-  color: white;
-  background: linear-gradient(to left, rgba(0,0,0,0.9), transparent);
-  /* transition: transform 1s ease;  */
-  transition: .3s ease;
+  background: var(--container-color);
+  color: var(--text-color);
 }
 
 .qualification__title {
