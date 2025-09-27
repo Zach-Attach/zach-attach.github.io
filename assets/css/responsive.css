@@ -18,11 +18,6 @@
     grid-template-columns: 1fr;
   }
 
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
-  }
-
   .nav__list {
     column-gap: 0;
   }
@@ -167,10 +162,6 @@
 
   body {
       margin: 0;
-  }
-
-  .section {
-      padding: 6rem 0 2rem;
   }
 
   .section__title {
