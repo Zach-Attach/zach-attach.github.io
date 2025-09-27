@@ -371,43 +371,53 @@ img {
   margin-right: var(--mb-1-5);
 }
 
-.about__img{
-  width: 200px;
-  border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
-}
-
-.about__img-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.collage-row {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: nowrap;
-}
-
-.about__img-container .about__img {
+.about__carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  background: var(--container-color);
+}
+
+.about__carousel-track {
+  display: flex;
+  width: 600%; /* 6 sets of images */
+  height: 100%;
+  animation: scrollLeft 150s linear infinite; /* Much longer duration */
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  /* Ensure images are evenly distributed */
+  justify-content: flex-start;
+}
+
+.about__carousel-container:hover .about__carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-83.33%); /* Move 5/6 of the track (leaving 1 set visible) */
+  }
+}
+
+.about__img{
+  width: 180px;
+  height: 180px;
+  border-radius: 0.5rem;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
   cursor: pointer;
-  animation: float 6s ease-in-out infinite;
+  margin: 0 0.5rem; /* Additional spacing for perfect distribution */
 }
-
-.about__img-container .about__img:hover {
-  transform: scale(1.05);
-}
-
-.about__img:nth-child(1) { animation-delay: 0s; }
-.about__img:nth-child(2) { animation-delay: 1s; }
-.about__img:nth-child(3) { animation-delay: 2s; }
-.about__img:nth-child(4) { animation-delay: 1.5s; }
 
 /* Modal styles */
 .modal {
@@ -455,28 +465,8 @@ img {
   to { opacity: 1; }
 }
 
-.collage-row:nth-child(1) .about__img:nth-child(1) {
-  width: 23%;
-  /* width: 200px; */
-  /* height: 200px; */
-}
-
-.collage-row:nth-child(1) .about__img:nth-child(2) {
-  width: 23%;
-  /* width: 200px; */
-  /* height: 200px; */
-}
-
-.collage-row:nth-child(1) .about__img:nth-child(3) {
-  width: 23%;
-  /* width: 130px;
-  height: 130px; */
-}
-
-.collage-row:nth-child(1) .about__img:nth-child(4) {
-  width: 23%;
-  /* width: 130px;
-  height: 130px; */
+.about__img:hover {
+  transform: scale(1.05);
 }
 
 .about_description {
