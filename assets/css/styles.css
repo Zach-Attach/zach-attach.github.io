@@ -327,6 +327,20 @@ img {
   color: var(--github-color); /* Darker GitHub green on hover */
 }
 
+.home__data {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__social-buttons {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home__blob{
   width: 100%;
   fill: var(--first-color);
