@@ -91,14 +91,14 @@ const sections = document.querySelectorAll("section[id]");
 let ticking = false;
 
 function scrollActive() {
-  const verticalScrollPosition = window.scrollY;
+  const scrollY = window.scrollY;
 
   sections.forEach((current) => {
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 50;
       let sectionId = current.getAttribute("id");
 
-      if (verticalScrollPosition > sectionTop && verticalScrollPosition <= sectionTop + sectionHeight) {
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           const activeLink = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
           if (activeLink && !activeLink.classList.contains("active-link")) {
               document.querySelectorAll(".nav__menu a").forEach(link => link.classList.remove("active-link"));
