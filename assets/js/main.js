@@ -87,8 +87,11 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
+// Use throttling for scroll performance
+let ticking = false;
+
 function scrollActive() {
-  const verticalScrollPosition = window.verticalScrollPosition || window.scrollY;
+  const verticalScrollPosition = window.scrollY;
 
   sections.forEach((current) => {
       const sectionHeight = current.offsetHeight;
@@ -96,36 +99,62 @@ function scrollActive() {
       let sectionId = current.getAttribute("id");
 
       if (verticalScrollPosition > sectionTop && verticalScrollPosition <= sectionTop + sectionHeight) {
-          document
-              .querySelector(".nav__menu a[href*=" + sectionId + "]")
-              .classList.add("active-link");
-      } else {
-          document
-              .querySelector(".nav__menu a[href*=" + sectionId + "]")
-              .classList.remove("active-link");
+          const activeLink = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
+          if (activeLink && !activeLink.classList.contains("active-link")) {
+              document.querySelectorAll(".nav__menu a").forEach(link => link.classList.remove("active-link"));
+              activeLink.classList.add("active-link");
+          }
       }
   });
+  ticking = false;
 }
 
-window.addEventListener("scroll", scrollActive);
+function requestScrollUpdate() {
+  if (!ticking) {
+    requestAnimationFrame(scrollActive);
+    ticking = true;
+  }
+}
+
+window.addEventListener("scroll", requestScrollUpdate, { passive: true });
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
+let headerTicking = false;
+
 function scrollHeader() {
   const nav = document.getElementById("header");
-  if (this.verticalScrollPosition >= 80) nav.classList.add("scroll-header");
+  if (window.scrollY >= 80) nav.classList.add("scroll-header");
   else nav.classList.remove("scroll-header");
+  headerTicking = false;
 }
 
-window.addEventListener("scroll", scrollHeader);
+function requestHeaderUpdate() {
+  if (!headerTicking) {
+    requestAnimationFrame(scrollHeader);
+    headerTicking = true;
+  }
+}
+
+window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
 
 /*==================== SHOW SCROLL UP ====================*/
+let scrollUpTicking = false;
+
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  if (this.verticalScrollPosition >= 560) scrollUp.classList.add("show-scroll");
+  if (window.scrollY >= 560) scrollUp.classList.add("show-scroll");
   else scrollUp.classList.remove("show-scroll");
+  scrollUpTicking = false;
 }
 
-window.addEventListener("scroll", scrollUp);
+function requestScrollUpUpdate() {
+  if (!scrollUpTicking) {
+    requestAnimationFrame(scrollUp);
+    scrollUpTicking = true;
+  }
+}
+
+window.addEventListener("scroll", requestScrollUpUpdate, { passive: true });
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
@@ -325,21 +354,31 @@ if(contactBtn){
 }
 
 /*==================== PARALLAX ====================*/
-document.addEventListener('scroll', function() {
-    const parallaxItems = document.querySelectorAll('.qualification__item');
-    const speed = 0.3;
+let parallaxTicking = false;
 
-    parallaxItems.forEach(item => {
-        const itemTop = item.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        
-        if (itemTop < windowHeight && itemTop > -item.offsetHeight) {
-            const img = item.querySelector('.qualification__img');
-            const yPos = -(itemTop * speed);
-            img.style.transform = `translateY(${yPos}px)`;
-        }
-    });
-});
+document.addEventListener('scroll', function() {
+    if (!parallaxTicking) {
+        requestAnimationFrame(() => {
+            const parallaxItems = document.querySelectorAll('.qualification__item');
+            const speed = 0.3;
+
+            parallaxItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (itemTop < windowHeight && itemTop > -item.offsetHeight) {
+                    const img = item.querySelector('.qualification__img');
+                    if (img) {
+                        const yPos = -(itemTop * speed);
+                        img.style.transform = `translateY(${yPos}px)`;
+                    }
+                }
+            });
+            parallaxTicking = false;
+        });
+        parallaxTicking = true;
+    }
+}, { passive: true });
 
 /*==================== IMAGE MODAL ====================*/
 const modal = document.getElementById("image-modal");
@@ -347,19 +386,20 @@ const modalImg = document.getElementById("modal-img");
 const modalClose = document.getElementById("modal-close");
 const images = document.querySelectorAll('.about__img');
 
-images.forEach(function(img) {
-  img.addEventListener('click', function() {
+// Use event delegation for better performance
+document.querySelector('.about__carousel-container')?.addEventListener('click', function(event) {
+  if (event.target.classList.contains('about__img')) {
     modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-  });
+    modalImg.src = event.target.src;
+    modalImg.alt = event.target.alt;
+  }
 });
 
-modalClose.addEventListener('click', function() {
+modalClose?.addEventListener('click', function() {
   modal.style.display = "none";
 });
 
-modal.addEventListener('click', function(event) {
+modal?.addEventListener('click', function(event) {
   if (event.target === modal) {
     modal.style.display = "none";
   }
