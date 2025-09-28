@@ -169,10 +169,10 @@
     --smaller-font-size: 0.813rem;
   }
 
-.home__content {
-    grid-template-columns: 35% 50%;
-    gap: 5%;
-}
+  .home__content {
+      grid-template-columns: 35% 50%;
+      gap: 5%;
+  }
 
   body {
       margin: 0;
@@ -306,5 +306,9 @@
 
   .contact__inputs {
       grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__data {
+      height: 100%;
   }
 }

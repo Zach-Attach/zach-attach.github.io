@@ -23,7 +23,8 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-    --github-color: #5FED83;
+    --github-color: #438440;
+    /* --github-color: #5FED83; */
     --linkedin-color: #0e76a8;
 
     /*========== Font and typography ==========*/
@@ -339,6 +340,12 @@ img {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.skills__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .home__blob{
@@ -716,7 +723,6 @@ img {
 }
 
 .skills__bubble:hover {
-    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -732,7 +738,7 @@ img {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
     }
     100% {
         transform: translateY(0px);
@@ -760,7 +766,6 @@ img {
     position: relative;
     border-radius: 0;
     overflow: hidden;
-    cursor: pointer;
     height: 350px; /* Or a height that suits your design */
     z-index: 0;
 }
@@ -789,34 +794,35 @@ img {
 
 .qualification__title {
     font-size: var(--h3-font-size);
-    color: white;
+    color: var(--title-color);
     margin-bottom: var(--mb-0-5);
 }
 
 .qualification__subtitle {
     font-size: var(--small-font-size);
-    color: white;
+    color: var(--text-color);
     margin-bottom: var(--mb-0-25);
 }
 
 .qualification__subsubtitle {
     font-size: var(--smaller-font-size);
-    color: #eee;
+    color: var(--text-color);
 }
 
 .qualification__subsubtitle:hover {
-    color: var(--first-color-lighter);
+    color: var(--first-color);
 }
 
 .qualification__calendar {
     font-size: var(--smaller-font-size);
-    color: white;
+    color: var(--text-color);
     margin-top: auto;
 }
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
+  width: 80%;
 }
 
 .portfolio__content {
