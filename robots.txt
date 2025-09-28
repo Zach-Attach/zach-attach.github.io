@@ -1,0 +1,15 @@
+# robots.txt for https://zach-attach.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zach-attach.github.io/sitemap.xml
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+
+# Crawl-delay (optional - helps with server load)
+Crawl-delay: 1
