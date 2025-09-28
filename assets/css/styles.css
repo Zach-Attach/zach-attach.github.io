@@ -256,6 +256,7 @@ img {
 }
 
 .home__content {
+  display: grid;
   grid-template-columns: 1fr;
   align-items: end;
   justify-content: center;
