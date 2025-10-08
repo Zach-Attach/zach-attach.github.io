@@ -753,7 +753,7 @@ img {
 }
 
 .qualification__img {
-  width: calc(100% - 20rem);
+  width: calc(100% - 30vw);
   min-height: 700px;
   object-fit: cover;
   transition: filter 0.3s ease;
@@ -765,7 +765,7 @@ img {
 .qualification__data {
   position: absolute;
   width: 20rem;
-  left: calc(100% - 20rem);
+  left: calc(100% - 30vw);
   display: flex;
   flex-direction: column;
   padding: 1rem;
