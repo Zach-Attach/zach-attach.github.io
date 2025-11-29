@@ -257,7 +257,7 @@ img {
 
 .home__content {
   display: grid;
-  grid-template-columns: 1fr;
+  filter: grayscale(100%);
   align-items: end;
   justify-content: center;
   background-image: url('../img/banner.svg');
@@ -753,7 +753,7 @@ img {
 }
 
 .qualification__img {
-  width: calc(100% - 30vw);
+  width: calc(100% - 20vw);
   min-height: 700px;
   object-fit: cover;
   transition: filter 0.3s ease;
@@ -764,7 +764,7 @@ img {
 
 .qualification__data {
   position: absolute;
-  width: 20rem;
+  width: 30vw;
   left: calc(100% - 30vw);
   display: flex;
   flex-direction: column;
