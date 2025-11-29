@@ -260,9 +260,9 @@ img {
   grid-template-columns: 1fr;
   align-items: end;
   justify-content: center;
-  background-image: url('../img/banner.png');
+  background-image: url('../img/banner.svg');
   background-position: center;
-  background-size: cover;
+  background-size: 50%;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 100%;
@@ -335,7 +335,7 @@ img {
 }
 
 .home__blob {
-  width: 100%;
+  width: 90%;
   fill: var(--first-color);
   vertical-align: top;
 }
