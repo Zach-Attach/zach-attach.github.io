@@ -257,15 +257,28 @@ img {
 
 .home__content {
   display: grid;
-  filter: grayscale(100%);
   align-items: end;
   justify-content: center;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.home__content::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
   background-image: url('../img/banner.svg');
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100%;
+  z-index: -1; 
+  filter: contrast(0.9);
+}
+@media screen and (max-width: 968px) {
+  .home__content::before {
+    background-position: 50% 10%;
+  }
 }
 
 .home__header {
