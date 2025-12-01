@@ -260,18 +260,35 @@ img {
   grid-template-columns: 1fr;
   align-items: end;
   justify-content: center;
-  background-image: url('../img/banner.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
   height: 100%;
+  position: relative;
+}
+
+.home__content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black; 
+  background-image: url('../img/banner.svg');
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  z-index: -1; 
+  filter: contrast(0.9);
+}
+@media screen and (max-width: 968px) {
+  .home__content::before {
+    background-position: 50% 10%;
+  }
 }
 
 .home__header {
   flex-direction: column;
   align-items: center;
-  align-self: center;
+  align-self: bottom;
+  margin-bottom: 4rem;
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
