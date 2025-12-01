@@ -257,6 +257,7 @@ img {
 
 .home__content {
   display: grid;
+  grid-template-columns: 1fr;
   align-items: end;
   justify-content: center;
   overflow: hidden;
@@ -769,7 +770,7 @@ img {
 }
 
 .qualification__img {
-  width: calc(100% - 20vw);
+  width: calc(100% - 30vw);
   min-height: 700px;
   object-fit: cover;
   transition: filter 0.3s ease;
@@ -780,7 +781,7 @@ img {
 
 .qualification__data {
   position: absolute;
-  width: 30vw;
+  width: 20rem;
   left: calc(100% - 30vw);
   display: flex;
   flex-direction: column;
