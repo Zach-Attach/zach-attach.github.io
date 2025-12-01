@@ -276,7 +276,6 @@ img {
   background-size: 70%;
   background-repeat: no-repeat;
   z-index: -1; 
-  filter: contrast(0.9);
 }
 @media screen and (max-width: 968px) {
   .home__content::before {
